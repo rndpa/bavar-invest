@@ -1,0 +1,26 @@
+{% load i18n %}
+
+{% block offer %}
+  <section class="offer">
+    <div class="container">
+      <h2 class="offer-title">{% translate "Предложения по категориям" context 'offer' %}</h2>
+      <p class="offer-descr">{% translate "Из объектов недвижимости Турции" context 'offer' %}</p>
+      <div class="offer-object">
+        <div class="object-link__one">
+          <a href=" {% url 'first_line' %} " class="object-link__big object-link1">{% translate "Первая линия" context 'offer' %}</a>
+        </div>
+        <div class="object-link__two">
+          <a href=" {% url 'hot_offer' %} " class="object-link__small object-link2">{% translate "Горячие предложения" context 'offer' %}</a>
+          <a href=" {% url 'out_infra' %} " class="object-link__small object-link3">{% translate "Отдельная инфраструктура" context 'offer' %}</a>
+        </div>
+        <div class="object-link__three">
+          <a href=" {% url 'vip' %} " class="object-link__big object-link4">{% translate "Роскошная жизнь" context 'offer' %}</a>
+        </div>
+        <div class="object-link__four">
+          <a href=" {% url 'sob' %} " class="object-link__small object-link5">{% translate "От собственников" context 'offer' %}</a>
+          <a href=" {% url 'zas' %} " class="object-link__small object-link6">{% translate "От застройщика" context 'offer' %}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

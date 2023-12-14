@@ -1,0 +1,14 @@
+{% extends 'flat/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+  {% translate "Поиск недвижимости в Турции" context 'filter_main' %}
+{% endblock %}
+
+{% block body %}
+  {% include 'flat/components/filter/filter.html' %}
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/how.html' %}
+{% endblock %}

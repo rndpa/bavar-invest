@@ -1,0 +1,60 @@
+{% load static %}
+{% load i18n %}
+
+{% block how %}
+  <section class="how">
+    <div class="container">
+      <h2 class="how-title">{% translate "Какая недвижимость Вам нужна?" context 'how' %}</h2>
+      <ul class="how-list">
+        <li class="how-list__itm">
+          <a href=" {% url 'villa' %} ">
+            <div class="how-img__villa"></div>
+            <p>{% translate "Виллы" context 'how' %}</p>
+          </a>
+        </li>
+        <li class="how-list__itm">
+          <a href=" {% url 'zdania' %} ">
+            <div class="how-img__zdanie"></div>
+            <p>{% translate "Здания" context 'how' %}</p>
+          </a>
+        </li>
+        <li class="how-list__itm">
+          <a href=" {% url 'zemlia' %} ">
+            <div class="how-img__zem"></div>
+            <p>{% translate "Земельный участок" context 'how' %}</p>
+          </a>
+        </li>
+        <li class="how-list__itm">
+          <a href=" {% url 'kvartira' %} ">
+            <div class="how-img__kvartira"></div>
+            <p>{% translate "Квартира" context 'how' %}</p>
+          </a>
+        </li>
+        <li class="how-list__itm">
+          <a href=" {% url 'penthouse' %} ">
+            <div class="how-img__penthouse"></div>
+            <p>{% translate "Пентхаус" context 'how' %}</p>
+          </a>
+        </li>
+        <li class="how-list__itm">
+          <a href=" {% url 'komm' %} ">
+            <div class="how-img__komned"></div>
+            <p>{% translate "Коммерческая недвижимость" context 'how' %}</p>
+          </a>
+        </li>
+        <li class="how-list__itm">
+          <a href=" {% url 'townhouse' %} ">
+            <div class="how-img__townnhouse"></div>
+            <p>{% translate "Таунхаус" context 'how' %}</p>
+          </a>
+        </li>
+        <li class="how-list__itm">
+          <a href=" {% url 'otel' %} ">
+            <div class="how-img__hotels"></div>
+            <p>{% translate "Отели" context 'how' %}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+{% endblock %}

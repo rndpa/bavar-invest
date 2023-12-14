@@ -1,0 +1,27 @@
+{% load i18n %}
+
+{% block all %}
+  <section class="all">
+    <div class="container">
+      <h2 class="all-title">{% translate "Вся недвижимость Турции" context 'all' %}</h2>
+      <div class="all-block">
+        <div class="block-nav">
+          <button id="btnVilla" class="block-nav__btn">{% translate "Виллы" context 'all' %}</button>
+          <button id="btnZdanie" class="block-nav__btn">{% translate "Здания" context 'all' %}</button>
+          <button id="btnZemlia" class="block-nav__btn">{% translate "Земля" context 'all' %}</button>
+          <button id="btnKvartira" class="block-nav__btn">{% translate "Квартира" context 'all' %}</button>
+          <button id="btnPenthouse" class="block-nav__btn">{% translate "Пентхаус" context 'all' %}</button>
+          <button id="btnKomm" class="block-nav__btn">{% translate "Коммерческая" context 'all' %}</button>
+          <button id="btnTownhouse" class="block-nav__btn">{% translate "Таунхаус" context 'all' %}</button>
+          <button id="btnOtel" class="block-nav__btn">{% translate "Отели" context 'all' %}</button>
+        </div>
+        <div class="all-cards">
+          <ul class="newobj-cards" id="allCards"></ul>
+        </div>
+      </div>
+      <div class="newobj-btn">
+        <a href=" {% url 'all' %} " class="newobj-btn__itm">{% translate "Посмотреть все" context 'all' %}</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

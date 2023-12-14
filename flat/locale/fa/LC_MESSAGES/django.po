@@ -1,0 +1,1263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 13:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: flat/templates/flat/Turkish.html:6
+msgctxt "turkish_main"
+msgid "Продажа недвижимости в Турции"
+msgstr "املاک و مستغلات برای فروش در ترکیه"
+
+#: flat/templates/flat/Turkish.html:13
+msgctxt "turkish_main"
+msgid "Недвижимость в Турции"
+msgstr "املاک و مستغلات در ترکیه"
+
+#: flat/templates/flat/Turkish.html:44
+msgctxt "turkish_main"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/Turkish.html:46
+msgctxt "turkish_main"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/all.html:6
+msgctxt "all_main"
+msgid "Продажа недвижимости весь каталог"
+msgstr "فروش املاک و مستغلات کل کاتالوگ"
+
+#: flat/templates/flat/all.html:13
+msgctxt "all_main"
+msgid "Вся недвижимость"
+msgstr "تمام املاک و مستغلات"
+
+#: flat/templates/flat/all.html:44
+msgctxt "all_main"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/all.html:46
+msgctxt "all_main"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/articles.html:6 flat/templates/flat/articles.html:12
+msgctxt "articles_main"
+msgid "Статьи о Турецкой Недвижимости"
+msgstr "مقالات در مورد املاک و مستغلات ترکیه"
+
+#: flat/templates/flat/articles_detail.html:6
+msgctxt "articles_detail"
+msgid "Статья"
+msgstr "مقاله"
+
+#: flat/templates/flat/base.html:62
+msgctxt "header"
+msgid "Турция:"
+msgstr "ترکیه:"
+
+#: flat/templates/flat/base.html:95
+msgctxt "header-btn"
+msgid "ПАРТНЕРАМ"
+msgstr "شرکا"
+
+#: flat/templates/flat/base.html:96
+msgctxt "header-btn"
+msgid "ЗАДАТЬ ВОПРОС"
+msgstr "سوال بپرسید"
+
+#: flat/templates/flat/base.html:97
+msgctxt "header-btn"
+msgid "ОЗНАКОМИТЕЛЬНЫЙ ТУР"
+msgstr "تور مطالعه"
+
+#: flat/templates/flat/base.html:98
+msgctxt "header-btn"
+msgid "ГРАЖДАНСТВО ТУРЦИИ"
+msgstr "تابعیت ترکیه"
+
+#: flat/templates/flat/base.html:103
+msgctxt "header-menu"
+msgid "Компания"
+msgstr "شرکت"
+
+#: flat/templates/flat/base.html:106
+msgctxt "header-menu"
+msgid "Международная недвижимость"
+msgstr "املاک و مستغلات بین المللی"
+
+#: flat/templates/flat/base.html:109
+msgctxt "header-menu"
+msgid "Услуги"
+msgstr "خدمات"
+
+#: flat/templates/flat/base.html:112
+msgctxt "header-menu"
+msgid "Отзывы"
+msgstr "بررسی ها"
+
+#: flat/templates/flat/base.html:115
+msgctxt "header-menu"
+msgid "Полезное"
+msgstr "مفید"
+
+#: flat/templates/flat/base.html:118
+msgctxt "header-menu"
+msgid "Контакты"
+msgstr "مخاطبین"
+
+#: flat/templates/flat/base.html:141
+msgctxt "footer-menu"
+msgid "Политика конфиденциальности"
+msgstr "سیاست حفظ حریم خصوصی"
+
+#: flat/templates/flat/base.html:144
+msgctxt "footer-menu"
+msgid "Навигация"
+msgstr "ناوبری"
+
+#: flat/templates/flat/base.html:147
+msgctxt "footer-menu"
+msgid "Компания"
+msgstr "شرکت"
+
+#: flat/templates/flat/base.html:150
+msgctxt "footer-menu"
+msgid "Международная недвижимость"
+msgstr "املاک و مستغلات بین المللی"
+
+#: flat/templates/flat/base.html:153
+msgctxt "footer-menu"
+msgid "Услуги"
+msgstr "خدمات"
+
+#: flat/templates/flat/base.html:156
+msgctxt "footer-menu"
+msgid "Отзывы"
+msgstr "بررسی ها"
+
+#: flat/templates/flat/base.html:159
+msgctxt "footer-menu"
+msgid "Контакты"
+msgstr "مخاطبین"
+
+#: flat/templates/flat/base.html:164
+msgctxt "footer-contacts"
+msgid "Контакты"
+msgstr "مخاطبین"
+
+#: flat/templates/flat/base.html:167
+msgctxt "footer-contacts"
+msgid "Режим работы: ПН-ПТ. с9:00 до 18:00. СБ. с 9:00 до 15:00"
+msgstr "ساعات کار: دوشنبه تا جمعه از ساعت 9: 00 تا 18:00. شنبه از ساعت 9: 00 تا 15: 00"
+
+#: flat/templates/flat/cherno.html:6
+msgctxt "cherno_main"
+msgid "Проадажа недвижимости в Черногории"
+msgstr "املاک و مستغلات برای فروش در مونته نگرو"
+
+#: flat/templates/flat/cherno.html:12
+msgctxt "cherno_main"
+msgid "Недвижимость в Черногории"
+msgstr "املاک و مستغلات در مونته نگرو"
+
+#: flat/templates/flat/cherno.html:43
+msgctxt "cherno_main"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/cherno.html:45
+msgctxt "cherno_main"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/components/about.html:40
+msgctxt "about"
+msgid "Помощь в подборе недвижимости"
+msgstr "کمک در انتخاب املاک و مستغلات"
+
+#: flat/templates/flat/components/about.html:50
+msgctxt "about"
+msgid "Подберем для Вас идеальную недвижимость"
+msgstr "ما ملک ایده آل را برای شما انتخاب خواهیم کرد"
+
+#: flat/templates/flat/components/about.html:52
+msgctxt "about"
+msgid ""
+"Не нашли подходящий вариант? Заполните форму и мы найдем те объекты, которые "
+"вам необходимы"
+msgstr "گزینه مناسبی پیدا نکردید ؟  فرم را پر کنید و ما اشیاء مورد نیاز شما را پیدا خواهیم کرد"
+
+#: flat/templates/flat/components/about.html:60
+msgctxt "about"
+msgid "Отправьте нам свое сообщение"
+msgstr "پیام خود را برای ما ارسال کنید"
+
+#: flat/templates/flat/components/about.html:62
+msgctxt "about"
+msgid "Ваше имя:*"
+msgstr "نام شما:*"
+
+#: flat/templates/flat/components/about.html:66
+msgctxt "about"
+msgid "Ваш email:*"
+msgstr "ایمیل شما:*"
+
+#: flat/templates/flat/components/about.html:70
+msgctxt "about"
+msgid "Ваш телефон:*"
+msgstr "شماره تلفن شما:*"
+
+#: flat/templates/flat/components/about.html:76
+msgctxt "about"
+msgid "Опишите ваши требования:"
+msgstr "نیازهای خود را توصیف کنید:"
+
+#: flat/templates/flat/components/about.html:78
+msgctxt "about"
+msgid "Отправить вопрос"
+msgstr "ارسال یک سوال"
+
+#: flat/templates/flat/components/about.html:84
+msgctxt "about"
+msgid "Я прочитал и соглашаюсь с правилами об обработке персональных данных"
+msgstr "من قوانین پردازش اطلاعات شخصی را خوانده ام و با آن موافقم"
+
+#: flat/templates/flat/components/all.html:6
+msgctxt "all"
+msgid "Вся недвижимость Турции"
+msgstr "تمام املاک و مستغلات در ترکیه"
+
+#: flat/templates/flat/components/all.html:9
+msgctxt "all"
+msgid "Виллы"
+msgstr "ویلاها"
+
+#: flat/templates/flat/components/all.html:10
+msgctxt "all"
+msgid "Здания"
+msgstr "ساختمان"
+
+#: flat/templates/flat/components/all.html:11
+msgctxt "all"
+msgid "Земля"
+msgstr "زمین"
+
+#: flat/templates/flat/components/all.html:12
+msgctxt "all"
+msgid "Квартира"
+msgstr "تخت"
+
+#: flat/templates/flat/components/all.html:13
+msgctxt "all"
+msgid "Пентхаус"
+msgstr "پنت هاوس"
+
+#: flat/templates/flat/components/all.html:14
+msgctxt "all"
+msgid "Коммерческая"
+msgstr "تجاری"
+
+#: flat/templates/flat/components/all.html:15
+msgctxt "all"
+msgid "Таунхаус"
+msgstr "خانه شهر"
+
+#: flat/templates/flat/components/all.html:16
+msgctxt "all"
+msgid "Отели"
+msgstr "هتل ها"
+
+#: flat/templates/flat/components/all.html:23
+msgctxt "all"
+msgid "Посмотреть все"
+msgstr "مشاهده همه"
+
+#: flat/templates/flat/components/articles.html:6
+msgctxt "articles"
+msgid "Статьи о Турецкой Недвижимости"
+msgstr "مقالات در مورد املاک و مستغلات ترکیه"
+
+#: flat/templates/flat/components/articles.html:22
+msgctxt "articles"
+msgid "Все статьи"
+msgstr "همه مقالات"
+
+#: flat/templates/flat/components/filter/filter.html:4
+msgctxt "filter"
+msgid "Фильтр поиска международной недвижимости для покупки"
+msgstr "فیلتر جستجوی بین المللی املاک و مستغلات برای خرید"
+
+#: flat/templates/flat/components/filter/filter.html:12
+msgctxt "filter"
+msgid "Страна"
+msgstr "یک کشور"
+
+#: flat/templates/flat/components/filter/filter.html:18
+msgctxt "filter"
+msgid "Город"
+msgstr "شهر"
+
+#: flat/templates/flat/components/filter/filter.html:24
+msgctxt "filter"
+msgid "Район"
+msgstr "منطقه"
+
+#: flat/templates/flat/components/filter/filter.html:30
+msgctxt "filter"
+msgid "Тип недвижимости"
+msgstr "نوع ملک"
+
+#: flat/templates/flat/components/filter/filter.html:36
+msgctxt "filter"
+msgid "Статус"
+msgstr "وضعیت"
+
+#: flat/templates/flat/components/filter/filter.html:37
+msgctxt "filter"
+msgid "Все статусы"
+msgstr "همه وضعیت ها"
+
+#: flat/templates/flat/components/filter/filter.html:40
+msgctxt "filter"
+msgid "Инфраструктура"
+msgstr "زیرساخت ها"
+
+#: flat/templates/flat/components/filter/filter.html:41
+msgctxt "filter"
+msgid "Вся Инфраструктура"
+msgstr "کل زیرساخت ها"
+
+#: flat/templates/flat/components/filter/filter.html:45
+msgctxt "filter"
+msgid "Поиск"
+msgstr "جستجو"
+
+#: flat/templates/flat/components/filter/filter.html:53
+msgctxt "filter_all"
+msgid "Фильтр недвижимости"
+msgstr "فیلتر املاک و مستغلات"
+
+#: flat/templates/flat/components/filter/filter.html:56
+msgctxt "filter_all"
+msgid "Виллы"
+msgstr "ویلاها"
+
+#: flat/templates/flat/components/filter/filter.html:57
+msgctxt "filter_all"
+msgid "Здания"
+msgstr "ساختمان"
+
+#: flat/templates/flat/components/filter/filter.html:58
+msgctxt "filter_all"
+msgid "Земля"
+msgstr "زمین"
+
+#: flat/templates/flat/components/filter/filter.html:59
+msgctxt "filter_all"
+msgid "Квартира"
+msgstr "تخت"
+
+#: flat/templates/flat/components/filter/filter.html:60
+msgctxt "filter_all"
+msgid "Пентхаус"
+msgstr "پنت هاوس"
+
+#: flat/templates/flat/components/filter/filter.html:61
+msgctxt "filter_all"
+msgid "Коммерческая"
+msgstr "تجاری"
+
+#: flat/templates/flat/components/filter/filter.html:62
+msgctxt "filter_all"
+msgid "Таунхаус"
+msgstr "خانه شهر"
+
+#: flat/templates/flat/components/filter/filter.html:63
+msgctxt "filter_all"
+msgid "Отели"
+msgstr "هتل ها"
+
+#: flat/templates/flat/components/filter/filter_main.html:9
+msgctxt "filter_main"
+msgid "Страна"
+msgstr "یک کشور"
+
+#: flat/templates/flat/components/filter/filter_main.html:15
+msgctxt "filter_main"
+msgid "Город"
+msgstr "شهر"
+
+#: flat/templates/flat/components/filter/filter_main.html:21
+msgctxt "filter_main"
+msgid "Район"
+msgstr "منطقه"
+
+#: flat/templates/flat/components/filter/filter_main.html:27
+msgctxt "filter_main"
+msgid "Тип недвижимости"
+msgstr "نوع ملک"
+
+#: flat/templates/flat/components/filter/filter_main.html:33
+msgctxt "filter_main"
+msgid "Статус"
+msgstr "وضعیت"
+
+#: flat/templates/flat/components/filter/filter_main.html:34
+msgctxt "filter_main"
+msgid "Все статусы"
+msgstr "همه وضعیت ها"
+
+#: flat/templates/flat/components/filter/filter_main.html:37
+msgctxt "filter_main"
+msgid "Инфраструктура"
+msgstr "زیرساخت ها"
+
+#: flat/templates/flat/components/filter/filter_main.html:38
+msgctxt "filter_main"
+msgid "Вся Инфраструктура"
+msgstr "کل زیرساخت ها"
+
+#: flat/templates/flat/components/filter/filter_main.html:42
+msgctxt "filter_main"
+msgid "Поиск"
+msgstr "جستجو"
+
+#: flat/templates/flat/components/hero.html:8
+msgctxt "hero"
+msgid "Турция"
+msgstr "ترکیه"
+
+#: flat/templates/flat/components/hero.html:11
+msgctxt "hero"
+msgid "Черногорье"
+msgstr "مونته نگرو"
+
+#: flat/templates/flat/components/hero.html:14
+msgctxt "hero"
+msgid "Грузия"
+msgstr "گرجستان"
+
+#: flat/templates/flat/components/hero.html:17
+msgctxt "hero"
+msgid "Свереный Кипр"
+msgstr "قبرس شمالی"
+
+#: flat/templates/flat/components/how.html:7
+msgctxt "how"
+msgid "Какая недвижимость Вам нужна?"
+msgstr "چه نوع املاک و مستغلات لازم داری؟"
+
+#: flat/templates/flat/components/how.html:12
+msgctxt "how"
+msgid "Виллы"
+msgstr "ویلاها"
+
+#: flat/templates/flat/components/how.html:18
+msgctxt "how"
+msgid "Здания"
+msgstr "ساختمان"
+
+#: flat/templates/flat/components/how.html:24
+msgctxt "how"
+msgid "Земельный участок"
+msgstr "قطعه زمین"
+
+#: flat/templates/flat/components/how.html:30
+msgctxt "how"
+msgid "Квартира"
+msgstr "تخت"
+
+#: flat/templates/flat/components/how.html:36
+msgctxt "how"
+msgid "Пентхаус"
+msgstr "پنت هاوس"
+
+#: flat/templates/flat/components/how.html:42
+msgctxt "how"
+msgid "Коммерческая недвижимость"
+msgstr "املاک تجاری"
+
+#: flat/templates/flat/components/how.html:48
+msgctxt "how"
+msgid "Таунхаус"
+msgstr "خانه شهر"
+
+#: flat/templates/flat/components/how.html:54
+msgctxt "how"
+msgid "Отели"
+msgstr "هتل ها"
+
+#: flat/templates/flat/components/new_object.html:6
+msgctxt "new_object"
+msgid "Новые объекты"
+msgstr "اشیاء جدید"
+
+#: flat/templates/flat/components/new_object.html:37
+msgctxt "new_object"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/components/new_object.html:39
+msgctxt "new_object"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/components/new_object.html:51
+msgctxt "new_object"
+msgid "посмотреть все"
+msgstr "مشاهده همه"
+
+#: flat/templates/flat/components/news.html:8
+msgctxt "news"
+msgid "Важные новости"
+msgstr "اخبار مهم"
+
+#: flat/templates/flat/components/news.html:20
+msgctxt "news"
+msgid "Все Новости"
+msgstr "همه اخبار"
+
+#: flat/templates/flat/components/news.html:24
+msgctxt "news"
+msgid "Законы в Турции"
+msgstr "قوانین در ترکیه"
+
+#: flat/templates/flat/components/news.html:36
+msgctxt "news"
+msgid "Все законы"
+msgstr "همه قوانین"
+
+#: flat/templates/flat/components/offer.html:6
+msgctxt "offer"
+msgid "Предложения по категориям"
+msgstr "پیشنهادات بر اساس دسته بندی"
+
+#: flat/templates/flat/components/offer.html:7
+msgctxt "offer"
+msgid "Из объектов недвижимости Турции"
+msgstr "از املاک و مستغلات در ترکیه"
+
+#: flat/templates/flat/components/offer.html:10
+msgctxt "offer"
+msgid "Первая линия"
+msgstr "خط اول"
+
+#: flat/templates/flat/components/offer.html:13
+msgctxt "offer"
+msgid "Горячие предложения"
+msgstr "پیشنهادات داغ"
+
+#: flat/templates/flat/components/offer.html:14
+msgctxt "offer"
+msgid "Отдельная инфраструктура"
+msgstr "زیرساخت های جداگانه"
+
+#: flat/templates/flat/components/offer.html:17
+msgctxt "offer"
+msgid "Роскошная жизнь"
+msgstr "زندگی لوکس"
+
+#: flat/templates/flat/components/offer.html:20
+msgctxt "offer"
+msgid "От собственников"
+msgstr "از مالکان"
+
+#: flat/templates/flat/components/offer.html:21
+msgctxt "offer"
+msgid "От застройщика"
+msgstr "از طرف توسعه دهنده"
+
+#: flat/templates/flat/components/reviews.html:6
+msgctxt "reviews"
+msgid "Отзывы наших клиентов"
+msgstr "بازخورد از مشتریان ما"
+
+#: flat/templates/flat/components/reviews.html:20
+msgctxt "reviews"
+msgid "все отзывы"
+msgstr "همه بررسی ها"
+
+#: flat/templates/flat/details.html:6
+msgctxt "details_main"
+msgid "Продажа недвижимости"
+msgstr "فروش املاک و مستغلات"
+
+#: flat/templates/flat/details.html:21
+msgctxt "details_main"
+msgid "Горячее предложение"
+msgstr "پیشنهاد داغ"
+
+#: flat/templates/flat/details.html:25
+msgctxt "details_main"
+msgid "Первая линия"
+msgstr "خط اول"
+
+#: flat/templates/flat/details.html:29
+msgctxt "details_main"
+msgid "Отдельная инфраструктура"
+msgstr "زیرساخت های جداگانه"
+
+#: flat/templates/flat/details.html:33
+msgctxt "details_main"
+msgid "Для роскошной жизни"
+msgstr "برای یک زندگی لوکس"
+
+#: flat/templates/flat/details.html:413
+msgctxt "details_main"
+msgid "Стоимость"
+msgstr "هزینه"
+
+#: flat/templates/flat/details.html:416
+msgctxt "details_main"
+msgid "Комнаты:"
+msgstr "اتاق ها:"
+
+#: flat/templates/flat/details.html:421
+msgctxt "details_main"
+msgid "Площадь объекта:"
+msgstr "مساحت جسم:"
+
+#: flat/templates/flat/details.html:427
+msgctxt "details_main"
+msgid "Год постройки:"
+msgstr "سال ساخت و ساز:"
+
+#: flat/templates/flat/details.html:433
+msgctxt "details_main"
+msgid "Мебель:"
+msgstr "مبلمان:"
+
+#: flat/templates/flat/details.html:433
+msgctxt "details_main"
+msgid "Есть"
+msgstr "وجود دارد"
+
+#: flat/templates/flat/details.html:439
+msgctxt "details_main"
+msgid "Страна:"
+msgstr "یک کشور:"
+
+#: flat/templates/flat/details.html:445
+msgctxt "details_main"
+msgid "Город:"
+msgstr "شهر:"
+
+#: flat/templates/flat/details.html:448
+msgctxt "details_main"
+msgid "Предложение:"
+msgstr "پیشنهاد:"
+
+#: flat/templates/flat/details.html:451
+msgctxt "details_main"
+msgid "Тип недвижимости:"
+msgstr "نوع ملک:"
+
+#: flat/templates/flat/details.html:457
+msgctxt "details_main"
+msgid "Расстояние до моря:"
+msgstr "فاصله تا دریا:"
+
+#: flat/templates/flat/details.html:457 flat/templates/flat/details.html:463
+#: flat/templates/flat/details.html:469
+msgctxt "details_main"
+msgid "км"
+msgstr "کیلومتر"
+
+#: flat/templates/flat/details.html:463
+msgctxt "details_main"
+msgid "Расстояние до центра:"
+msgstr "فاصله تا مرکز:"
+
+#: flat/templates/flat/details.html:469
+msgctxt "details_main"
+msgid "Расстояние до аэропорта:"
+msgstr "فاصله تا فرودگاه:"
+
+#: flat/templates/flat/details.html:474
+msgctxt "details_main"
+msgid "В"
+msgstr "در"
+
+#: flat/templates/flat/details.html:474
+msgctxt "details_main"
+msgid "так же есть:"
+msgstr "همچنین داشته باشند:"
+
+#: flat/templates/flat/details.html:478
+msgctxt "details_main"
+msgid "Беспроводной интернет"
+msgstr "اینترنت بی سیم"
+
+#: flat/templates/flat/details.html:483
+msgctxt "details_main"
+msgid "Бильярд"
+msgstr "بیلیارد"
+
+#: flat/templates/flat/details.html:488
+msgctxt "details_main"
+msgid "Электрический генератор"
+msgstr "ژنراتور الکتریکی"
+
+#: flat/templates/flat/details.html:493
+msgctxt "details_main"
+msgid "Зеленый сад"
+msgstr "باغ سبز"
+
+#: flat/templates/flat/details.html:498
+msgctxt "details_main"
+msgid "Финская сауна"
+msgstr "سونا فنلاندی"
+
+#: flat/templates/flat/details.html:503
+msgctxt "details_main"
+msgid "Джакузи"
+msgstr "جکوزی"
+
+#: flat/templates/flat/details.html:508
+msgctxt "details_main"
+msgid "Детская площадка"
+msgstr "زمین بازی کودکان"
+
+#: flat/templates/flat/details.html:513
+msgctxt "details_main"
+msgid "Видеонаблюдение"
+msgstr "نظارت تصویری"
+
+#: flat/templates/flat/details.html:518
+msgctxt "details_main"
+msgid "Настольный теннис"
+msgstr "تنیس روی میز"
+
+#: flat/templates/flat/details.html:523
+msgctxt "details_main"
+msgid "Закрытй бассейн"
+msgstr "استخر شنا داخلی"
+
+#: flat/templates/flat/details.html:528
+msgctxt "details_main"
+msgid "Римская парная"
+msgstr "اتاق بخار روم"
+
+#: flat/templates/flat/details.html:533
+msgctxt "details_main"
+msgid "Спутниковое ТВ"
+msgstr "تلویزیون ماهواره ای"
+
+#: flat/templates/flat/details.html:538
+msgctxt "details_main"
+msgid "Массажные кабинеты"
+msgstr "اتاق های ماساژ"
+
+#: flat/templates/flat/details.html:543
+msgctxt "details_main"
+msgid "Фитнес центр"
+msgstr "مرکز تناسب اندام"
+
+#: flat/templates/flat/details.html:548
+msgctxt "details_main"
+msgid "Турецкий хамам"
+msgstr "همام ترکیه"
+
+#: flat/templates/flat/details.html:553
+msgctxt "details_main"
+msgid "Игровая комната"
+msgstr "اتاق بازی"
+
+#: flat/templates/flat/details.html:558
+msgctxt "details_main"
+msgid "Детский бассейн"
+msgstr "استخر کودکان"
+
+#: flat/templates/flat/details.html:563
+msgctxt "details_main"
+msgid "Открытый бассейн"
+msgstr "استخر شنا در فضای باز"
+
+#: flat/templates/flat/details.html:568
+msgctxt "details_main"
+msgid "Беседки для отдыха"
+msgstr "Gazebos برای تفریح"
+
+#: flat/templates/flat/details.html:573
+msgctxt "details_main"
+msgid "Крытая парковка"
+msgstr "پارکینگ سرپوشیده"
+
+#: flat/templates/flat/details.html:578
+msgctxt "details_main"
+msgid "Открытая парковка"
+msgstr "پارکینگ در فضای باز"
+
+#: flat/templates/flat/details.html:584
+msgctxt "details_main"
+msgid "Описание объекта"
+msgstr "شرح شی"
+
+#: flat/templates/flat/details.html:587
+msgctxt "details_main"
+msgid "Наши специалисты:"
+msgstr "متخصصین ما:"
+
+#: flat/templates/flat/details.html:593 flat/templates/flat/details.html:609
+#: flat/templates/flat/details.html:625 flat/templates/flat/details.html:641
+msgctxt "details_main"
+msgid "Языки:"
+msgstr "زبان ها:"
+
+#: flat/templates/flat/details.html:596 flat/templates/flat/details.html:612
+#: flat/templates/flat/details.html:628 flat/templates/flat/details.html:644
+msgctxt "details_main"
+msgid "Телефон:"
+msgstr "تلفن:"
+
+#: flat/templates/flat/filter.html:6
+msgctxt "filter_main"
+msgid "Поиск недвижимости в Турции"
+msgstr "جستجوی ملک در ترکیه"
+
+#: flat/templates/flat/gruzia.html:6
+msgctxt "gruzia_main"
+msgid "Продажа недвижимости в Грузии"
+msgstr "املاک و مستغلات برای فروش در گرجستان"
+
+#: flat/templates/flat/gruzia.html:12
+msgctxt "gruzia_main"
+msgid "Недвижимость в Грузии"
+msgstr "املاک و مستغلات در گرجستان"
+
+#: flat/templates/flat/gruzia.html:43
+msgctxt "gruzia_main"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/gruzia.html:45
+msgctxt "gruzia_main"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/komm.html:6
+msgctxt "komm"
+msgid "Продажа недвижимости Коммерчесская недвижимость"
+msgstr "فروش املاک و مستغلات املاک و مستغلات تجاری"
+
+#: flat/templates/flat/how/komm.html:13
+msgctxt "komm"
+msgid "Коммерчесская недвижимость"
+msgstr "املاک تجاری"
+
+#: flat/templates/flat/how/komm.html:47
+msgctxt "komm"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/komm.html:58
+msgctxt "komm"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/how/kvartira.html:6
+msgctxt "kvartira"
+msgid "Продажа недвижимости Квартиры"
+msgstr "فروش آپارتمان املاک و مستغلات"
+
+#: flat/templates/flat/how/kvartira.html:13
+msgctxt "kvartira"
+msgid "Квартиры"
+msgstr "آپارتمان ها"
+
+#: flat/templates/flat/how/kvartira.html:45
+msgctxt "kvartira"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/how/kvartira.html:47
+msgctxt "kvartira"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/kvartira.html:58
+msgctxt "kvartira"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/how/otel.html:6
+msgctxt "otel"
+msgid "Продажа недвижимости Отели"
+msgstr "املاک و مستغلات برای فروش هتل ها"
+
+#: flat/templates/flat/how/otel.html:13
+msgctxt "otel"
+msgid "Отели"
+msgstr "هتل ها"
+
+#: flat/templates/flat/how/otel.html:45
+msgctxt "otel"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/how/otel.html:47
+msgctxt "otel"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/otel.html:58
+msgctxt "otel"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/how/penthouse.html:6
+msgctxt "penthouse"
+msgid "Продажа недвижимости Пентхаусы"
+msgstr "فروش پنت هاوس املاک و مستغلات"
+
+#: flat/templates/flat/how/penthouse.html:13
+msgctxt "penthouse"
+msgid "Пентхаусы"
+msgstr "پنت هاوس ها"
+
+#: flat/templates/flat/how/penthouse.html:45
+msgctxt "penthouse"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/how/penthouse.html:47
+msgctxt "penthouse"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/penthouse.html:58
+msgctxt "penthouse"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/how/townhouse.html:6
+msgctxt "townhouse"
+msgid "Продажа недвижимости Таунхаус"
+msgstr "املاک و مستغلات برای فروش"
+
+#: flat/templates/flat/how/townhouse.html:13
+msgctxt "townhouse"
+msgid "Таунхаус"
+msgstr "خانه شهر"
+
+#: flat/templates/flat/how/townhouse.html:45
+msgctxt "townhouse"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/how/townhouse.html:47
+msgctxt "townhouse"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/townhouse.html:58
+msgctxt "townhouse"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/how/villa.html:6
+msgctxt "villa"
+msgid "Продажа недвижимости Виллы"
+msgstr "فروش ویلاهای املاک و مستغلات"
+
+#: flat/templates/flat/how/villa.html:13
+msgctxt "villa"
+msgid "Виллы"
+msgstr "ویلاها"
+
+#: flat/templates/flat/how/villa.html:45
+msgctxt "villa"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/how/villa.html:47
+msgctxt "villa"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/villa.html:58
+msgctxt "villa"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/how/zdania.html:6
+msgctxt "zdania"
+msgid "Продажа недвижимости Здания"
+msgstr "فروش ساختمان املاک و مستغلات"
+
+#: flat/templates/flat/how/zdania.html:13
+msgctxt "zdania"
+msgid "Здания"
+msgstr "ساختمان"
+
+#: flat/templates/flat/how/zdania.html:45
+msgctxt "zdania"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/how/zdania.html:47
+msgctxt "zdania"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/zdania.html:58
+msgctxt "zdania"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/how/zemlia.html:6
+msgctxt "zemlia"
+msgid "Продажа недвижимости Земельные участки"
+msgstr "فروش زمین املاک و مستغلات"
+
+#: flat/templates/flat/how/zemlia.html:13
+msgctxt "zemlia"
+msgid "Земельные участки"
+msgstr "Земельные участки"
+
+#: flat/templates/flat/how/zemlia.html:45
+msgctxt "zemlia"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/how/zemlia.html:47
+msgctxt "zemlia"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/how/zemlia.html:58
+msgctxt "zemlia"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/index.html:6
+msgctxt "index"
+msgid "Bavar-invest - Недвижимость в Турции"
+msgstr "Bavar-سرمایه گذاری - املاک و مستغلات در ترکیه"
+
+#: flat/templates/flat/kipr.html:6
+msgctxt "kipr_main"
+msgid "Продажа недвижимости в Северном Кипре"
+msgstr "املاک برای فروش در قبرس شمالی"
+
+#: flat/templates/flat/kipr.html:12
+msgctxt "kipr_main"
+msgid "Недвижимость в Северном Кипре"
+msgstr "املاک و مستغلات در قبرس شمالی"
+
+#: flat/templates/flat/kipr.html:43
+msgctxt "kipr_main"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/kipr.html:45
+msgctxt "kipr_main"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/laws.html:6 flat/templates/flat/laws.html:12
+msgctxt "laws_main"
+msgid "Законы в Турции"
+msgstr "قوانین در ترکیه"
+
+#: flat/templates/flat/laws_detail.html:6
+msgctxt "laws_detail"
+msgid "Законы в Турции"
+msgstr "قوانین در ترکیه"
+
+#: flat/templates/flat/news.html:6
+msgctxt "news_main"
+msgid "Турецкие новости"
+msgstr "اخبار ترکیه"
+
+#: flat/templates/flat/news.html:12
+msgctxt "news_main"
+msgid "Новости в Турции"
+msgstr "اخبار در ترکیه"
+
+#: flat/templates/flat/news_detail.html:6
+msgctxt "news_detail"
+msgid "Турецкие новости"
+msgstr "اخبار ترکیه"
+
+#: flat/templates/flat/offers/first.html:6
+msgctxt "first"
+msgid "Продажа недвижимости в первая линия"
+msgstr "فروش املاک و مستغلات در خط اول"
+
+#: flat/templates/flat/offers/first.html:13
+msgctxt "first"
+msgid "Недвижимость на первой линии"
+msgstr "املاک و مستغلات در خط اول"
+
+#: flat/templates/flat/offers/first.html:45
+msgctxt "first"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/offers/first.html:47
+msgctxt "first"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/offers/first.html:58
+msgctxt "first"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/offers/hot.html:6
+msgctxt "hot"
+msgid "Продажа недвижимости горячие предложения"
+msgstr "فروش املاک و مستغلات پیشنهادات داغ"
+
+#: flat/templates/flat/offers/hot.html:13
+msgctxt "hot"
+msgid "Недвижимость в Горячие предложения"
+msgstr "املاک و مستغلات در معاملات داغ"
+
+#: flat/templates/flat/offers/hot.html:45
+msgctxt "hot"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/offers/hot.html:47
+msgctxt "hot"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/offers/hot.html:58
+msgctxt "hot"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/offers/out.html:6
+msgctxt "out"
+msgid "Продажа недвижимости с отдельной инфраструктурой"
+msgstr "فروش املاک و مستغلات با زیرساخت های جداگانه"
+
+#: flat/templates/flat/offers/out.html:13
+msgctxt "out"
+msgid "Недвижимость с отдельной инфраструктурой"
+msgstr "املاک و مستغلات با زیرساخت های جداگانه"
+
+#: flat/templates/flat/offers/out.html:45
+msgctxt "out"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/offers/out.html:47
+msgctxt "out"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/offers/out.html:58
+msgctxt "out"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/offers/sob.html:6
+msgctxt "sob"
+msgid "Продажа недвижимости от Собственников"
+msgstr "فروش املاک و مستغلات از صاحبان"
+
+#: flat/templates/flat/offers/sob.html:13
+msgctxt "sob"
+msgid "Недвижимость от Собственников"
+msgstr "املاک و مستغلات از صاحبان"
+
+#: flat/templates/flat/offers/sob.html:45
+msgctxt "sob"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/offers/sob.html:47
+msgctxt "sob"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/offers/sob.html:58
+msgctxt "sob"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/offers/vip.html:6
+msgctxt "vip"
+msgid "Продажа недвижимости для роскошной жизни"
+msgstr "فروش املاک و مستغلات برای زندگی لوکس"
+
+#: flat/templates/flat/offers/vip.html:13
+msgctxt "vip"
+msgid "Недвижимость для роскошной жизни"
+msgstr "املاک و مستغلات برای زندگی لوکس"
+
+#: flat/templates/flat/offers/vip.html:45
+msgctxt "vip"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/offers/vip.html:47
+msgctxt "vip"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/offers/vip.html:58
+msgctxt "vip"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/offers/zas.html:6
+msgctxt "zas"
+msgid "Продажа недвижимости от Застройщика"
+msgstr "فروش املاک و مستغلات از توسعه دهنده"
+
+#: flat/templates/flat/offers/zas.html:13
+msgctxt "zas"
+msgid "Недвижимость от Застройщика"
+msgstr "املاک و مستغلات از توسعه دهنده"
+
+#: flat/templates/flat/offers/zas.html:45
+msgctxt "zas"
+msgid "m2"
+msgstr "m2"
+
+#: flat/templates/flat/offers/zas.html:47
+msgctxt "zas"
+msgid "Подробности по телефону"
+msgstr "جزئیات از طریق تلفن"
+
+#: flat/templates/flat/offers/zas.html:58
+msgctxt "zas"
+msgid "На данный момент в данной категории нет объектов"
+msgstr "در حال حاضر هیچ شی در این دسته وجود ندارد"
+
+#: flat/templates/flat/reviews.html:6
+msgctxt "reviews_main"
+msgid "Отзывы о компании Bavar-invest"
+msgstr "نظرات در مورد شرکت Bavar-invest"
+
+#: flat/templates/flat/reviews.html:12
+msgctxt "reviews_main"
+msgid "Отзывы наших клиентов"
+msgstr "بازخورد از مشتریان ما"
+
+#: flat/views.py:579
+msgid "Привет мир!"
+msgstr ""

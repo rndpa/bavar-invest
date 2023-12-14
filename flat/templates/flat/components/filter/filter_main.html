@@ -1,0 +1,96 @@
+{% block filter_main %}
+  {% load i18n %}
+  <section class="filter">
+    <div class="container">
+      <form id="mainForm" class="filter-form" action=" {% url 'filter' %} " method="get">
+        <div class="form-block">
+          <div class="form-block__one">
+            <select class="block-selected" name="main_country">
+              <option value="" selected disabled>
+                {% translate 'Страна' context 'filter_main' %}
+              </option>
+              <option value="">
+                {% translate 'Все' context 'filter_main' %}
+              </option>
+              {% for itm in country %}
+                <option value=" {{ itm.pk }} ">{{ itm }}</option>
+              {% endfor %}
+            </select>
+            <select class="block-selected" name="main_city">
+              <option value="" selected disabled>
+                {% translate 'Город' context 'filter_main' %}
+              </option>
+              <option value="">
+                {% translate 'Все' context 'filter_main' %}
+              </option>
+              {% for itm in city %}
+                <option value=" {{ itm.pk }} ">{{ itm }}</option>
+              {% endfor %}
+            </select>
+            <select class="block-selected" name="main_district" id="">
+              <option value="" selected disabled>
+                {% translate 'Район' context 'filter_main' %}
+              </option>
+              <option value="">
+                {% translate 'Все' context 'filter_main' %}
+              </option>
+              {% for itm in district %}
+                <option value="{{ itm.pk }}">{{ itm }}</option>
+              {% endfor %}
+            </select>
+            <select class="block-selected" name="main_type_real_estate" id="">
+              <option value="" selected disabled>
+                {% translate 'Тип недвижимости' context 'filter_main' %}
+              </option>
+              <option value="">
+                {% translate 'Все' context 'filter_main' %}
+              </option>
+              {% for itm in type_real_estate %}
+                <option value="{{ itm.pk }}">{{ itm }}</option>
+              {% endfor %}
+            </select>
+            <select class="block-selected" name="">
+              <option value="" selected disabled>
+                {% translate 'Статус' context 'filter_main' %}
+              </option>
+              <option value="">
+                {% translate 'Все' context 'filter_main' %}
+              </option>
+              {% for itm in main_status %}
+                <option value="{{ itm.pk }}">{{ itm }}</option>
+              {% endfor %}
+            </select>
+            <select class="block-selected" name="">
+              <option value="" selected disabled>
+                {% translate 'Инфраструктура' context 'filter_main' %}
+              </option>
+              <option value="">
+                {% translate 'Все' context 'filter_main' %}
+              </option>
+              {% for itm in main_infrastructure %}
+                <option value="{{ itm.pk }}">{{ itm }}</option>
+              {% endfor %}
+            </select>
+            <select class="block-selected" name="to_sea">
+              <option value="" selected disabled>
+                {% translate 'Расстоние до моря' context 'filter_main' %}
+              </option>
+              <option value="0">
+                {% translate 'Все' context 'filter_main' %}
+              </option>
+              <option value="0.5">
+                0.5 {% translate 'км' context 'filter_main' %}
+              </option>
+              <option value="3">
+                3 {% translate 'км' context 'filter_main' %}
+              </option>
+            </select>
+          </div>
+          <div class="block-btn" id="">
+            <button id="formBtn" type="submit" class="block-selected btn-selected">{% translate 'Поиск' context 'filter_main' %}</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+{% endblock %}

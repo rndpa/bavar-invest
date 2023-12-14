@@ -1,0 +1,146 @@
+{% extends 'flat/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block metadescr %}
+  {% translate 'Продажа недвижимости в Турции - Гражданство' context 'grazhdanstvo' %}
+{% endblock %}
+{% block metakey %}
+  {% translate 'Продажа недвижимости в Турции - Гражданство' context 'grazhdanstvo' %}
+{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <h1>{% translate "Гражданство Турции за покупку недвижимости в 2023 году" context 'grazhdanstvo' %}</h1>
+    <p>{% translate "Турецкая республика ㅡ страна с многонациональным населением, в которой проживает более 84 миллионов человек. Турция имеет выгодное географическое положение, стабильную экономику, в стране прекрасный климат, душевные, благосклонные к мигрантам люди. И вовсе не удивительно, что все больше иностранцев покупают в Турции недвижимость для ПМЖ, а также для получения пассивного дохода или в качестве сохранения своего капитала." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Однако в любой стране жить удобнее и проще, если являться ее полноправным гражданином. И Турция предоставляет такую возможность для иностранцев." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Одним из самых простых способов получить турецкий паспорт является покупка недвижимости. Прежде всего такой вариант удобен тем, что для получения гражданства не надо ждать пять лет, сочетаться браком с местным жителем, организовывать свой, серьезный бизнес и т.д. Достаточно просто купить недвижимость." context 'grazhdanstvo' %}</p>
+    <h2>{% translate "Общие правила покупки недвижимости для получения гражданства Турции" context 'grazhdanstvo' %}</h2>
+    <p>{% translate "1. Стоимость недвижимости должна составлять не менее 400 тысяч долларов. При этом, может быть куплено один или несколько объектов. Главное, чтобы общая сумма была от 400 тысяч долларов." context 'grazhdanstvo' %}</p>
+    <p>{% translate "2. Недвижимость для получения гражданства можно приобретать только у физических лиц с турецким гражданством, либо у компании, которая зарегистрирована в Турции, как юридическое лицо. Другими словами, недвижимость, купленная в Турции у иностранца, не дает права на получение турецкого паспорта." context 'grazhdanstvo' %}</p>
+    <p>{% translate "3. Недвижимость нельзя продавать в течение трех лет. Спустя три года объект уже можно реализовать." context 'grazhdanstvo' %}</p>
+    <p>{% translate "4. В объекте недвижимости, купленном для получения гражданства, можно жить, его можно сдавать в аренду." context 'grazhdanstvo' %}</p>
+    <p>{% translate "5. Оплата производится только в турецких лирах по курсу, который действует на момент заключения сделки. Важно! Сумма в лирах в переводе на доллары должна быть не менее 400 тысяч." context 'grazhdanstvo' %}</p>
+    <p>{% translate "6. Деньги переводятся только официально со счета покупателя на счет продавца." context 'grazhdanstvo' %}</p>
+    <p>{% translate "7. Обязательно получение заключения эксперта о стоимости недвижимости. Это очень важно! Как правило, оценочная стоимость недвижимости не совпадает с рыночной ценой. А возможность получения гражданства госструктуры рассматривают именно на основании рапорта оценщика. Поэтому процедура оценки является очень важной, без рапорта документы на получение гражданства даже рассматриваться не будут!" context 'grazhdanstvo' %}</p>
+    <h2>{% translate "Сделка купли-продажи" context 'grazhdanstvo' %}</h2>
+    <p>{% translate "Если недвижимость покупается с целью получения гражданства, то сделка по купле-продаже проходит точно также, как и при покупке любой другой недвижимости. За тем лишь исключением, что недвижимость проходит дополнительную процедуру: экспертную оценку стоимости." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Начать процедуру по подаче документов на получение ВНЖ и затем гражданства можно сразу, как только получено ТАПУ (главный документ собственника недвижимости в Турции)." context 'grazhdanstvo' %}</p>
+    <h2>{% translate "Документы для получения гражданства Турции" context 'grazhdanstvo' %}</h2>
+    <ul>
+      <li>{% translate "Заявление, заполненное по специальной форме (в 2-х экземплярах)" context 'grazhdanstvo' %}</li>
+      <li>{% translate "Загранпаспорт" context 'grazhdanstvo' %}</li>
+      <li>{% translate "Свидетельство о рождении (в т.ч. и детей)" context 'grazhdanstvo' %}</li>
+      <li>{% translate "Свидетельство о браке" context 'grazhdanstvo' %}</li>
+      <li>{% translate "Справка о составе семьи" context 'grazhdanstvo' %}</li>
+      <li>{% translate "Фотографии заявителя" context 'grazhdanstvo' %}</li>
+      <p>
+        <i>{% translate "Важно! Все эти документы должны быть переведены на турецкий, апостилированы и заверены юристом. Если на гражданство претендуют другие члены семьи, то от них также требуется пакет документов." context 'grazhdanstvo' %}</i>
+      </p>
+      <li>{% translate "ТАПУ (свидетельство о собственности на объект недвижимости)" context 'grazhdanstvo' %}</li>
+      <li>{% translate "Действующий ВНЖ Турции" context 'grazhdanstvo' %}</li>
+      <li>{% translate "Uygunluk belgesi (документ, подтверждающий, что соблюдено условие покупки недвижимости на сумму от 400 тысяч долларов). Документ выдается в Кадастровом управлении." context 'grazhdanstvo' %}</li>
+      <li>{% translate "Отчет об оценке недвижимости (должен быть составлен только экспертом, имеющим соответствующие полномочия и действующую лицензию)" context 'grazhdanstvo' %}</li>
+      <p>
+        <i>{% translate "Важно! ВНЖ (икамет) можно получить сразу после покупки недвижимости. Обычно это занимает не больше месяца. И только потом, имея на руках икамет, можно подавать документы на гражданство." context 'grazhdanstvo' %}</i>
+      </p>
+    </ul>
+    <h2>{% translate "Особенности получения ВНЖ и гражданства" context 'grazhdanstvo' %}</h2>
+    <p>{% translate "Обязательно личное присутствие." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Обязательно иметь при посещении полный пакет документов. При этом, те из них, что выдавались не в Турции, должны быть переведены, заверены нотариусом и иметь апостиль." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Для получения ВНЖ обязательно наличие турецкой медстраховки." context 'grazhdanstvo' %}</p>
+    <p>{% translate "При получении турецкого гражданства можно сменить имя или\и фамилию на турецкие." context 'grazhdanstvo' %}</p>
+    <p>{% translate "При получении гражданства у заявителей берутся отпечатки пальцев." context 'grazhdanstvo' %}</p>
+    <p>{% translate "При получении ВНЖ и гражданства путем покупки недвижимости не нужно сдавать экзамен на знание турецкого, а также проходить собеседование." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Турецкий паспорт выдается сроком на 10 лет." context 'grazhdanstvo' %}</p>
+    <p>{% translate "При желании, потом можно получить и турецкий загранпаспорт." context 'grazhdanstvo' %}</p>
+    <p>
+      <i>{% translate "Важно! Сейчас, в связи большим количеством обращений, процедура по получению ВНЖ длится 1-1,5 месяца. Процедура получения гражданства с момента подачи документов до получения турецкого паспорта займет не более 6-и месяцев." context 'grazhdanstvo' %}</i>
+    </p>
+    <p>{% translate "Преимущества получения турецкого гражданства Возможность посещать 112 стран без виз." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Возможность получения гражданства членами семьи владельца недвижимости (муж\жена, несовершеннолетние, до 18 лет, дети)." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Возможность получения визы инвестора E-2 в США сроком на 5 лет (можно продлевать)." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Возможность сохранения гражданства своей страны (Турция разрешает двойное гражданство)." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Возможность найти в Турции более высокооплачиваемую работу, чем те, кто имеет только ВНЖ." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Возможность получения бесплатного образования (вузы Турции в числе лучших в мире)." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Возможность получения доступного и высококачественного медицинского обслуживания." context 'grazhdanstvo' %}</p>
+    <p>{% translate "И это только самое основное! А еще море, солнце, доступные цены, разнообразная и полезная еда, все виды отдыха, тысячи исторических достопримечательностей, простота открытия и ведения своего бизнеса, высокий уровень социальной защиты. Это и многое-многое другое предложит вам Турция, как только вы станете ее гражданином!" context 'grazhdanstvo' %}</p>
+    <h2>{% translate "Что предлагаем мы?" context 'grazhdanstvo' %}</h2>
+    <p>{% translate "Международная компания по продажам недвижимости в Турции Bavar-Invest поможет вам в получении турецкого паспорта на основании покупки недвижимости. У нас огромный опыт! Именно с помощью нашей компании впервые на Средиземноморье гражданство Турции за инвестиции в жилье получил иностранец." context 'grazhdanstvo' %}</p>
+    <p>{% translate "Мы поможем с выбором, с экспертизой, с оформлением всех документов. Гражданство Турции получить просто, если обратиться к профессионалам." context 'grazhdanstvo' %}</p>
+    <h2>{% translate 'Наши специалисты помогут с получением гражданства Турции:' context 'grazhdanstvo' %}</h2>
+    <ul class="person">
+      <li class="person-itm">
+        <img src=" {% static 'flat/img/person/vefa.png' %} " alt="" />
+        <h4>VEFA MURADOVNA</h4>
+        <p>
+          {% translate 'Языки:' context 'details_main' %} <span>TR</span>
+        </p>
+        <div class="person-itm__list">
+          <a href="tel:+905550486679">{% translate 'Телефон:' context 'details_main' %}+ 905550486679</a>
+          <div>
+            <a href="tg://resolve?domain=@Vefa_Muradovna"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+            <a href="https://wa.me/905550486679?text=bavar-invest.com" target="blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+          </div>
+        </div>
+      </li>
+      <li class="person-itm">
+        <img src=" {% static 'flat/img/person/bayram.png' %} " alt="" />
+        <h4>BAYRAM YESHILMEN</h4>
+        <p>
+          {% translate 'Языки:' context 'details_main' %} <span>AR</span>
+        </p>
+        <div class="person-itm__list">
+          <a href="tel:+905320653829">{% translate 'Телефон:' context 'details_main' %}+ 905320653829</a>
+          <div>
+            <a href="tg://resolve?domain=@Bayramyslmn"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+            <a href="https://wa.me/905550486679?text=bavar-invest.com" target="blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+          </div>
+        </div>
+      </li>
+      <li class="person-itm">
+        <img src=" {% static 'flat/img/person/reza.png' %} " alt="" />
+        <h4>RZA VEFAYI</h4>
+        <p>
+          {% translate 'Языки:' context 'details_main' %} <span>EN IR</span>
+        </p>
+        <div class="person-itm__list">
+          <a href="tel:+905537283963">{% translate 'Телефон:' context 'details_main' %}+ 905537283963</a>
+          <a href="tel:+989126228254">{% translate 'Телефон:' context 'details_main' %}+ 989126228254</a>
+
+          <div>
+            <a href="tg://resolve?domain=@Vefa_Muradovna"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+            <a href="https://wa.me/905537283963?text=bavar-invest.com" target="_blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+          </div>
+        </div>
+      </li>
+      <li class="person-itm">
+        <img src=" {% static 'flat/img/person/zhala.png' %} " alt="" />
+        <h4>ZHALA ELCHINOVNA</h4>
+        <p>
+          {% translate 'Языки:' context 'details_main' %} <span>RUS</span>
+        </p>
+        <div class="person-itm__list">
+          <a href="tel:+905354119767">{% translate 'Телефон:' context 'details_main' %}+ 905354119767</a>
+          <div>
+            <a href="tg://resolve?domain=@Vefa_Muradovna"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+            <a href="https://wa.me/905550486679?text=bavar-invest.com" target="blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <br /><br />
+  </div>
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/how.html' %}
+  {% include 'flat/components/all.html' %}
+{% endblock %}

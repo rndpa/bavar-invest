@@ -1,0 +1,26 @@
+{% load i18n %}
+
+{% block articles %}
+  <section class="articles">
+    <div class="container">
+      <h2 class="articles-title">{% translate "Статьи о Турецкой Недвижимости" context 'articles' %}</h2>
+      <ul class="articles-list">
+        {% for itm in articles %}
+          <li class="articles-list__itm">
+            <a href="{{ itm.get_absolute_url }}">
+              <div class="articles-list__top">
+                <img src="{{ itm.photo.url }}" alt="" />
+              </div>
+              <h4 class="articles-list__title">{{ itm.title }}</h4>
+              <div class="articles-list__text">{{ itm.text|truncatechars:200 }}</div>
+              <div class="articles-list__date">{{ itm.data }}</div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="newobj-btn">
+        <a href="{% url 'articles' %}" class="newobj-btn__itm">{% translate "Все статьи" context 'articles' %}</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

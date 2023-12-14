@@ -1,0 +1,33 @@
+{% extends 'flat/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+  {% translate "Законы в Турции" context 'laws_main' %}
+{% endblock %}
+
+{% block body %}
+  <section class="articles">
+    <div class="container">
+      <h2 class="articles-title">{% translate "Законы в Турции" context 'laws_main' %}</h2>
+      <ul class="articles-list">
+        {% for itm in laws %}
+          <li class="articles-list__itm">
+            <a href="{{itm.get_absolute_url}}">
+              <div class="articles-list__top">
+                <img src="{{ itm.photo.url }}" alt="" />
+              </div>
+              <h4 class="articles-list__title">{{ itm.title }}</h4>
+              <div class="articles-list__text">{{ itm.text|truncatechars:200 }}</div>
+              <div class="articles-list__date">{{ itm.data }}</div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/how.html' %}
+  {% include 'flat/components/all.html' %}
+{% endblock %}

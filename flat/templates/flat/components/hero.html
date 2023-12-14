@@ -1,0 +1,21 @@
+{% load static %}
+{% load i18n %}
+
+{% block hero %}
+  <section class="hero">
+    <ul class="hero-list">
+      <li class="hero-list__itm hero-img__turkey">
+        <a href=" {% url 'turkish' %} "></a><span>{% translate "Турция" context 'hero' %}</span>
+      </li>
+      <li class="hero-list__itm hero-img__chernogorie">
+        <a href=" {% url 'cherno' %} "></a><span>{% translate "Черногорье" context 'hero' %}</span>
+      </li>
+      <li class="hero-list__itm hero-img__gruzia">
+        <a href=" {% url 'gruzia' %} "></a><span>{% translate "Грузия" context 'hero' %}</span>
+      </li>
+      <li class="hero-list__itm hero-img__kipr">
+        <a href=" {% url 'kipr' %} "></a><span>{% translate "Свереный Кипр" context 'hero' %}</span>
+      </li>
+    </ul>
+  </section>
+{% endblock %}

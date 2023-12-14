@@ -1,0 +1,42 @@
+{% load i18n %}
+
+{% block news %}
+  <section class="news">
+    <div class="container">
+      <div class="news-block">
+        <div class="news-left">
+          <h3 class="news-left__title">{% translate "Важные новости" context 'news' %}</h3>
+          <ul class="news-list">
+            {% for itm in news %}
+              <li class="news-list__itm">
+                <a href="{{ itm.get_absolute_url }}">
+                  <img src="{{ itm.photo.url }}" alt="" />
+                  <span>{{ itm.title }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          <div class="newobj-btn">
+            <a href="{% url 'news' %}" class="newobj-btn__itm">{% translate "Все Новости" context 'news' %}</a>
+          </div>
+        </div>
+        <div class="news-right">
+          <h3 class="news-right__title">{% translate "Законы в Турции" context 'news' %}</h3>
+          <ul class="news-list">
+            {% for itm in laws %}
+              <li class="news-list__itm">
+                <a href="{{ itm.get_absolute_url }}">
+                  <img src="{{ itm.photo.url }}" alt="" />
+                  <span>{{ itm.title }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          <div class="newobj-btn">
+            <a href="{% url 'laws' %}" class="newobj-btn__itm">{% translate "Все законы" context 'news' %}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,210 @@
+{% extends 'flat/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block metadescr %}
+  {% translate 'Продажа недвижимости в Турции - Наши услуги' context 'service' %}
+{% endblock %}
+{% block metakey %}
+  {% translate 'Продажа недвижимости в Турции - Наши услуги' context 'service' %}
+{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <h1>{% translate 'Послепродажный сервис компании Bavar-Invest' context 'service' %}</h1>
+    <hr />
+    <strong><i>{% translate 'Получив документы на новую квартиру в Турции, вам не нужно беспокоиться о ремонте, так как квартиры обычно сдаются с полной отделкой, включая сантехнику и встроенную кухонную мебель. Несмотря на это, для комфортного проживания вам потребуется мебель, бытовая техника и другие необходимые предметы. В турецких городах есть множество магазинов, где можно приобрести все необходимое. Однако, при выборе мебели и техники следует учитывать некоторые важные моменты.' context 'service' %}</i></strong>
+    <br /><br />
+    <strong><i>{% translate 'Во-первых, качество: не стоит экономить на основных предметах, таких как кровать или холодильник.' context 'service' %}</i></strong>
+    <br />
+    <strong><i>{% translate 'Во-вторых, размеры: убедитесь, что мебель подходит для вашей квартиры.' context 'service' %}</i></strong>
+    <br />
+    <strong><i>{% translate 'В-третьих, стиль: выбирайте предметы, которые гармонично сочетаются друг с другом.' context 'service' %}</i></strong>
+    <br />
+    <strong><i>{% translate 'В-четвертых, цена: сравните предложения в разных магазинах, чтобы получить лучшую цену.' context 'service' %}</i></strong>
+    <br />
+    <strong><i>{% translate 'В-пятых, гарантия и обслуживание: убедитесь, что на товары есть гарантия и возможность обслуживания. И последнее, уточните условия доставки, установки и сборки.' context 'service' %}</i></strong>
+    <br /><br />
+    <strong><i>{% translate 'Следуя этим советам, вы сможете создать уютное и комфортное жилье в своей новой турецкой квартире.' context 'service' %}</i></strong>
+    <br />
+    <hr />
+
+    <h2>{% translate 'Предоставляемые услуги' context 'service' %}</h2>
+    <div class="flex service-1">
+      <img class="service-img" src="{% static 'flat/img/service/kran.jpg' %}" alt="" />
+      <div>
+        <h3>{% translate 'Заключение абонентских договоров на предоставление услуг водоснабжения, энергообеспечения, проводной и мобильной телефонной связи' context 'service' %}</h3>
+        <p>
+          {% translate 'Без абонентской платы за коммунальные услуги в Турции вода не будет поступать в квартиру, а люстры не будут освещаться. Мы можем помочь с заключением договоров на коммунальные услуги и решением любых вопросов, связанных с проживанием в квартире. Если возникнут проблемы с электричеством, водопроводом или другими системами, мы свяжемся с клиентом и устраним неисправности после получения инструкций.' context 'service' %}
+        </p>
+      </div>
+    </div>
+
+    <div class="flex service-2">
+      <div>
+        <h3>{% translate 'Ремонт помещения' context 'service' %}</h3>
+        <p>
+          {% translate 'Вы приобрели квартиру в Турции и хотите сделать ремонт или изменить планировку? В России многие клиенты делают ремонт не раз, но в Турции все по-другому. Наши менеджеры имеют опыт работы со строительными компаниями, знают турецкий язык и могут найти рабочих для ремонта. Мы поможем выбрать и купить строительные материалы, укажем на недостатки и примем работу. Сопровождение ремонта входит в наши услуги послепродажного сервиса, поэтому оно не оплачивается дополнительно.' context 'service' %}
+        </p>
+      </div>
+      <img src="{% static 'flat/img/service/remont.jpg' %}" alt="" class="service-img" />
+    </div>
+
+    <div class="flex service-3">
+      <img src="{% static 'flat/img/service/uborka.jpg' %}" alt="" class="service-img" />
+      <div>
+        <h3>{% translate 'Уборка помещения' context 'service' %}</h3>
+        <p>
+          {% translate 'Если клиент сообщает о своем приезде, мы производим уборку в квартире и проветриваем помещение. Перед отъездом в Россию можно забыть выключить холодильник или оставить продукты в шкафчике. Мы стараемся помочь нашим клиентам и устранить все проблемы. Также мы можем организовать уборку для гостей, которые приезжают в квартиру. Кроме того, мы можем помочь с арендой квартиры для друзей и родственников.' context 'service' %}
+        </p>
+      </div>
+    </div>
+
+    <div class="flex service-4">
+      <div>
+        <h3>{% translate 'Аренда помещения' context 'service' %}</h3>
+        <p>
+          {% translate 'Когда вы покупаете жилье через наше агентство, мы помогаем вам получить дополнительный доход от аренды. Мы рекомендуем уже существующих клиентов для сдачи вашей недвижимости в аренду. Менеджер по аренде помогает передать ключи и консультирует по выбору объекта недвижимости для аренды. На нашем сайте есть раздел с вариантами квартир и вилл для аренды.' context 'service' %}
+        </p>
+      </div>
+      <img src="{% static 'flat/img/service/arenda.jpg' %}" alt="" class="service-img" />
+    </div>
+
+    <div class="flex service-5">
+      <img src="{% static 'flat/img/service/arenda-auto.jpg' %}" alt="" class="service-img" />
+      <div>
+        <h3>{% translate 'Аренда автомобиля и консультация при покупке' context 'service' %}</h3>
+        <p>
+          {% translate 'Покупка или аренда жилья на побережье Средиземного моря позволяет провести отпуск в другой концепции, отличной от проживания в отеле. Многие наши гости и клиенты хотят познакомиться с историей курорта. Самый простой способ - арендовать автомобиль и отправиться в любом направлении. Мы можем помочь вам в этом, предоставив в аренду последнюю модель автомобиля на выгодных условиях. Если вы решили переехать или проводить много времени в своем втором доме в Турции, мы можем помочь вам с покупкой автомобиля.' context 'service' %}
+        </p>
+      </div>
+    </div>
+
+    <div class="flex service-6">
+      <div>
+        <h3>{% translate 'Дизайн и интерьер' context 'service' %}</h3>
+        <p>
+          {% translate 'Все мы знаем, как важен интерьер для комфортной жизни. При покупке квартиры за границей могут возникнуть сложности с обстановкой и дизайном. Но мы позаботились об этом! При заключении контракта на покупку недвижимости, мебельный пакет может быть уже включен в стоимость. Когда вы приедете в свою квартиру, все будет готово. Если вы любите выбирать мебель и технику самостоятельно, мы предоставим консультации специалистов. Специалист поможет вам выбрать мебель, элементы интерьера и дизайна, а также переведет на нужный язык.' context 'service' %}
+        </p>
+      </div>
+      <img src="{% static 'flat/img/service/disign.jpg' %}" alt="" class="service-img" />
+    </div>
+
+    <div class="flex service-7">
+      <img src="{% static 'flat/img/service/strahovka.jpg' %}" alt="" class="service-img" />
+      <div>
+        <h3>{% translate 'Страхование' context 'service' %}</h3>
+        <p>
+          {% translate 'Мы предлагаем услуги по страхованию недвижимости, здоровья и автомобиля. Если вы покупаете недвижимость, мы поможем вам оформить страховку на нее. Если вы заболеете, мы поможем получить медицинскую страховку. А если вы купите автомобиль, мы поможем застраховать его.' context 'service' %}
+        </p>
+      </div>
+    </div>
+
+    <div class="flex service-8">
+      <div>
+        <h3>{% translate 'Транспортные услуги' context 'service' %}</h3>
+        <p>
+          {% translate 'Если у вас есть трудности с покупкой авиабилетов, вы не знаете, как и где купить билет на чартерный рейс или вам нужен трансфер из аэропорта, обратитесь к вашему менеджеру по недвижимости. Он поможет вам решить все эти вопросы. Мы помогаем не только с выбором и покупкой недвижимости, но и с адаптацией в новой среде и предоставляем информацию, необходимую для комфортного проживания и отдыха.' context 'service' %}
+        </p>
+      </div>
+      <img src="{% static 'flat/img/service/transport-service.jpg' %}" alt="" class="service-img" />
+    </div>
+    <hr />
+    <p>
+      {% translate 'Если вы не знаете турецкого или английского языка, то вам может быть сложно объяснить свои пожелания продавцу в магазине мебели в Турции. Однако, есть несколько способов, которые помогут вам общаться с продавцами и покупать то, что вы хотите. Один из способов - использовать онлайн-переводчики или приложения для перевода, которые помогут перевести ваши слова на турецкий язык. Также можно использовать жесты и мимику, чтобы объяснить, что вы хотите купить. Если вы столкнулись с трудностями в общении, можете попросить помощи у друзей или знакомых, которые могут помочь вам в переводе.' context 'service' %}
+    </p>
+    <p>
+      {% translate 'При выборе техники в Турции можно ориентироваться на популярные мировые бренды. Однако, важно учитывать качество товара и выбирать проверенные марки. Цены на технику могут варьироваться в зависимости от магазина и модели товара. Поэтому рекомендуется сравнивать предложения в разных магазинах.' context 'service' %}
+    </p>
+    <p>
+      {% translate 'Выбор мебели в Турции может быть сложным из-за разнообразия стилей и качества продукции. Лучше всего выбирать мебель от известных производителей или обратиться за помощью к профессионалам. Важно учесть размеры мебели и ее сочетаемость с интерьером квартиры.' context 'service' %}
+    </p>
+    <p>
+      {% translate 'В турецких магазинах мебели и техники предлагаются различные услуги, такие как скидки, рассрочки платежей, сроки гарантии на товар. Рекомендуется узнать о наличии этих услуг и обсудить их с продавцом или менеджером магазина.' context 'service' %}
+    </p>
+    <p>
+      {% translate 'Другими словами, для совершения покупок в Турции после приобретения жилья часто требуется помощь гида. И не просто гида, а гида-помощника, поскольку у вас может быть мало времени до отъезда на родину или вы вообще не сможете приехать в страну для обустройства своих новых апартаментов за границей, а хотите сразу же наслаждаться отдыхом в полностью оборудованной квартире.' context 'service' %}
+    </p>
+    <p>
+      {% translate 'Агентство недвижимости Bavar-invest предлагает услуги послепродажного обслуживания для клиентов, которые приобрели недвижимость в Турции. Менеджеры компании готовы помочь в обустройстве жилья и решении возникающих вопросов. При необходимости, после получения свидетельства о собственности (ТАПУ), менеджер может организовать поездку по магазинам техники и мебели, где можно выбрать подходящие варианты. Если клиент не может приехать в Турцию, можно организовать покупку товаров по каталогу с доставкой и установкой. Кроме того, агентство может помочь с уборкой квартиры перед заездом и после отъезда клиента.' context 'service' %}
+    </p>
+    <p>
+      {% translate 'Агентство недвижимости Bavar-Invest предлагает услуги не только по продаже, но и по управлению недвижимостью в Турции. Мы готовы помочь нашим клиентам в решении любых вопросов, связанных с недвижимостью. Если вы хотите сдать свою квартиру в аренду, мы можем помочь с оформлением документов и поиском арендаторов. Мы также предлагаем услуги по уборке и обслуживанию недвижимости после сдачи в аренду.' context 'service' %}
+    </p>
+    <br />
+    <h4 class="details-title">{% translate 'Наши специалисты:' context 'details_main' %}</h4>
+    <ul class="person">
+      <li class="person-itm">
+        <img src=" {% static 'flat/img/person/vefa.png' %} " alt="" />
+        <h4>VEFA MURADOVNA</h4>
+        <p>
+          {% translate 'Языки:' context 'details_main' %} <span>TR</span>
+        </p>
+        <div class="person-itm__list">
+          <a href="tel:+905550486679">{% translate 'Телефон:' context 'details_main' %}+ 905550486679</a>
+          <div>
+            <a href="tg://resolve?domain=@Vefa_Muradovna"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+            <a href="https://wa.me/905550486679?text=bavar-invest.com" target="blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+          </div>
+        </div>
+      </li>
+      <li class="person-itm">
+        <img src=" {% static 'flat/img/person/bayram.png' %} " alt="" />
+        <h4>BAYRAM YESHILMEN</h4>
+        <p>
+          {% translate 'Языки:' context 'details_main' %} <span>AR</span>
+        </p>
+        <div class="person-itm__list">
+          <a href="tel:+905320653829">{% translate 'Телефон:' context 'details_main' %}+ 905320653829</a>
+          <div>
+            <a href="tg://resolve?domain=@Bayramyslmn"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+            <a href="https://wa.me/905550486679?text=bavar-invest.com" target="blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+          </div>
+        </div>
+      </li>
+      <li class="person-itm">
+        <img src=" {% static 'flat/img/person/reza.png' %} " alt="" />
+        <h4>RZA VEFAYI</h4>
+        <p>
+          {% translate 'Языки:' context 'details_main' %} <span>EN IR</span>
+        </p>
+        <div class="person-itm__list">
+          <a href="tel:+905537283963">{% translate 'Телефон:' context 'details_main' %}+ 905537283963</a>
+          <a href="tel:+989126228254">{% translate 'Телефон:' context 'details_main' %}+ 989126228254</a>
+
+          <div>
+            <a href="tg://resolve?domain=@Vefa_Muradovna"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+            <a href="https://wa.me/905537283963?text=bavar-invest.com" target="_blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+          </div>
+        </div>
+      </li>
+      <li class="person-itm">
+        <img src=" {% static 'flat/img/person/zhala.png' %} " alt="" />
+        <h4>ZHALA ELCHINOVNA</h4>
+        <p>
+          {% translate 'Языки:' context 'details_main' %} <span>RUS</span>
+        </p>
+        <div class="person-itm__list">
+          <a href="tel:+905354119767">{% translate 'Телефон:' context 'details_main' %}+ 905354119767</a>
+          <div>
+            <a href="tg://resolve?domain=@Vefa_Muradovna"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+            <a href="https://wa.me/905550486679?text=bavar-invest.com" target="blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <br /><br />
+  </div>
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/how.html' %}
+  {% include 'flat/components/all.html' %}
+{% endblock %}

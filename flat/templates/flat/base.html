@@ -1,0 +1,240 @@
+{% load static %}
+{% load i18n %}
+
+{% comment %} {% load google_translate %} {% endcomment %}
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        Bavar-invest.com
+      {% endblock %}
+    </title>
+    <meta name="description" content=" {% block metadescr %} {% endblock %}">
+    <meta name="Keywords" content=" {% block metakey %} {% endblock %} ">
+    
+    <link rel="shortcut icon" type="image/png" href="{% static 'flat/img/favicon.png' %}" />
+    <link rel="stylesheet" href=" {% static 'flat/css/normalize.css' %} " type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href=" {% static 'flat/css/style.css' %} " type="text/css" />
+    <link rel="stylesheet" href=" {% static 'flat/css/media.css' %} " type="text/css" />
+    <link rel="stylesheet" href=" {% static 'flat/css/lightbox.scss' %} " type="text/css" />
+    <script defer src="{% static 'flat/js/main.js' %}"></script>
+    <script defer src=" {% static 'flat/js/lightbox.js' %} "></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="{% static 'flat/js/swiper.js' %}"></script>
+    <script defer src="//code.jivosite.com/widget/tToCq1Fpsl" async></script>
+  </head>
+  <body>
+    {% block header %}
+      <section class="header">
+        <div class="container">
+          <div class="header-top">
+            <div class="header-left">
+              <div class="header-social">
+                <div class="header-social__link">
+                  <a href="#"><img src="{% static 'flat/img/social_pics/telegram.svg' %}" alt="telegram" /></a>
+                </div>
+                <div class="header-social__link">
+                  <a href="#"><img src="{% static 'flat/img/social_pics/facebook.svg' %}" alt="facebook" /></a>
+                </div>
+                <div class="header-social__link">
+                  <a href="#"><img src="{% static 'flat/img/social_pics/instagram.svg' %}" alt="instagram" /></a>
+                </div>
+                <div class="header-social__link">
+                  <a href="mailto:bavarinvest0707@gmail.com"><img class="mail" src="{% static 'flat/img/social_pics/mail.svg' %}" alt="mail" /></a>
+                </div>
+              </div>
+              <div class="header-phone">
+                <a href="tel:+905550486679">
+                  <img src="{% static 'flat/img/social_pics/phone-vibrate-fill.png' %}" alt="phone" />
+                  <div class="header-phone__city">
+                    {% translate 'Турция:' context 'header' %}
+                  </div>+90 555 048 66 79
+                </a>
+              </div>
+            </div>
+            <div class="header-right">
+              <div class="header-language">
+                <div>
+                  <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}" />
+                    <select name="language" id="lang">
+                      {% get_current_language as LANGUAGE_CODE %}
+                      {% get_available_languages as LANGUAGES %}
+                      {% get_language_info_list for LANGUAGES as languages %}
+                      {% for language in languages %}
+                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                          {{ language.name_local }} ({{ language.code }})
+                        </option>
+                        {% endfor %}
+                    </select>
+                    <input class="btn_lang" type="submit" value="Go">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-center">
+            <div class="header-logo">
+              <a href=" {% url 'home' %} "><img src="{% static 'flat/img/logo.png' %}" alt="logo" /></a>
+            </div>
+
+            <div class="header-down">
+              <div class="header-buttons">
+                <a href="#" class="header-btn btn-header__blue">{% translate 'ПАРТНЕРАМ' context 'header-btn' %}</a>
+                <a href="#" class="header-btn btn-header__orange" id="modalQuest">{% translate 'ЗАДАТЬ ВОПРОС' context 'header-btn' %}</a>
+                <a href="#" class="header-btn btn-header__orange">{% translate 'ОЗНАКОМИТЕЛЬНЫЙ ТУР' context 'header-btn' %}</a>
+                <a href="#" class="header-btn btn-header__red">{% translate 'ГРАЖДАНСТВО ТУРЦИИ' context 'header-btn' %}</a>
+              </div>
+              <nav class="header-menu">
+                <ul class="menu-list">
+                  <li class="menu-list__itm">
+                    <a href="#">{% translate 'Компания' context 'header-menu' %}</a>
+                  </li>
+                  <li class="menu-list__itm">
+                    <a href="#">{% translate 'Международная недвижимость' context 'header-menu' %}</a>
+                  </li>
+                  <li class="menu-list__itm">
+                    <a href="#">{% translate 'Услуги' context 'header-menu' %}</a>
+                  </li>
+                  <li class="menu-list__itm">
+                    <a href="#">{% translate 'Отзывы' context 'header-menu' %}</a>
+                  </li>
+                  <li class="menu-list__itm">
+                    <a href="#">{% translate 'Полезное' context 'header-menu' %}</a>
+                  </li>
+                  <li class="menu-list__itm">
+                    <a href="#">{% translate 'Контакты' context 'header-menu' %}</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <button class="mob-menu" id="mobMenuBtn">Открыть меню</button>
+
+              <nav class="hidden" id="mobMenu">
+                    <ul class="mob-list">
+                      <li class="mob-list__itm">
+                        <a href="{% url 'company' %}">{% translate 'Компания' context 'footer-menu' %}</a>
+                      </li>
+                      <li class="mob-list__itm">
+                        <a href="{% url 'filter' %}">{% translate 'Подбор недвижимости' context 'footer-menu' %}</a>
+                      </li>
+                      <li class="mob-list__itm">
+                        <a href="{% url 'service' %}">{% translate 'Услуги' context 'footer-menu' %}</a>
+                      </li>
+                      <li class="mob-list__itm">
+                        <a href="{% url 'reviews' %}">{% translate 'Отзывы' context 'footer-menu' %}</a>
+                      </li>
+                      <li class="mob-list__itm">
+                        <a href="{% url 'contact' %}">{% translate 'Контакты' context 'footer-menu' %}</a>
+                      </li>
+                    </ul>
+              </nav>
+
+          
+        </div>
+      </section>
+    {% endblock %}
+
+    {% block body %}
+
+    {% endblock %}
+
+    {% block footer %}
+      <section class="footer">
+        <div class="container">
+          <ul class="footer-list">
+            <li class="footer-left">
+              <img src="{% static 'flat/img/logo.png' %}" alt="" class="footer-logo" />
+              <p>
+                <b>Bavar-Invest</b> 2003-{% now 'Y' %}
+              </p>
+              <a href="#">{% translate 'Политика конфиденциальности' context 'footer-menu' %}</a>
+            </li>
+            <li class="footer-mid">
+              <h4 class="footer-mid__title">{% translate 'Навигация' context 'footer-menu' %}</h4>
+              <ul class="mid-list">
+                <li class="mid-list__itm">
+                  <a href="#">{% translate 'Компания' context 'footer-menu' %}</a>
+                </li>
+                <li class="mid-list__itm">
+                  <a href="#">{% translate 'Международная недвижимость' context 'footer-menu' %}</a>
+                </li>
+                <li class="mid-list__itm">
+                  <a href="#">{% translate 'Услуги' context 'footer-menu' %}</a>
+                </li>
+                <li class="mid-list__itm">
+                  <a href="#">{% translate 'Отзывы' context 'footer-menu' %}</a>
+                </li>
+                <li class="mid-list__itm">
+                  <a href="#">{% translate 'Контакты' context 'footer-menu' %}</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-right">
+              <h4 class="footer-right__title">{% translate 'Контакты' context 'footer-contacts' %}</h4>
+              <p>Oba göl mahallesi.14 SK .PTT evleri sitesi a blok .No, Oba, D:6, 07460 Alanya/Antalya, Türkiye</p>
+              <p>
+                {% translate 'Режим работы: ПН-ПТ. с9:00 до 18:00. СБ. с 9:00 до 15:00' context 'footer-contacts' %}
+              </p>
+              <hr />
+              <div class="right-block">
+                <ul class="footer-contacts">
+                  <li class="footer-contacts__itm">
+                    <p>
+                      TR: <a href="tel:+905550486679">+ 905550486679</a>
+                    </p>
+                  </li>
+                  <li class="footer-contacts__itm">
+                    <p>
+                      AR: <a href="tel:+905320653829">+ 905320653829</a>
+                    </p>
+                  </li>
+                  <li class="footer-contacts__itm">
+                    <p>
+                      RUS: <a href="tel:+905354119767">+ 905354119767</a>
+                    </p>
+                  </li>
+                  <li class="footer-contacts__itm">
+                    <p>
+                      EN: <a href="tel:+905537283963">+ 905537283963</a>
+                    </p>
+                  </li>
+                  <li class="footer-contacts__itm">
+                    <p>
+                      IR: <a href="tel:+989126228254">+ 989126228254</a>
+                    </p>
+                  </li>
+                </ul>
+                <ul class="footer-social">
+                  <li class="footer-social__itm header-social__link">
+                    <a href="#"><img src="{% static 'flat/img/social_pics/telegram.svg' %}" alt="" /></a>
+                  </li>
+                  <li class="footer-social__itm header-social__link">
+                    <a href="#"><img src="{% static 'flat/img/social_pics/facebook.svg' %}" alt="" /></a>
+                  </li>
+                  <li class="footer-social__itm header-social__link">
+                    <a href="#"><img src="{% static 'flat/img/social_pics/instagram.svg' %}" alt="" /></a>
+                  </li>
+                  <li class="footer-social__itm header-social__link">
+                    <a href="mailto:bavarinvest0707@gmail.com"><img class="mail" src="{% static 'flat/img/social_pics/mail.svg' %}" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-panel">
+          <a href="mailto:bavarinvest0707@gmail.com"><img class="footer-panel__img" src="{% static 'flat/img/panel/envelope.svg' %}" alt="">{% translate "Написать письмо" context 'footer_panel' %}</a>
+          <a href="{% url 'contact' %}"><img class="footer-panel__img" src="{% static 'flat/img/panel/contact.svg' %}" alt="">{% translate "Контакты" context 'footer_panel' %}</a>
+          <a href="https://wa.me/905550486679?text=bavar-invest.com" target="blank"><img class="footer-panel__img big" src="{% static 'flat/img/panel/whatsapp.svg' %}" alt="">{% translate "WhatsApp" context 'footer_panel' %}</a>
+          <a href="tel:+905550486679"><img class="footer-panel__img" src="{% static 'flat/img/panel/telephone.svg' %}" alt="">{% translate "Позвонить" context 'footer_panel' %}</a>
+        </div>
+      </section>
+    {% endblock %}
+  </body>
+</html>

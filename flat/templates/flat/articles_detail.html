@@ -1,0 +1,24 @@
+{% extends 'flat/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+  {% translate "Статья" context 'articles_detail' %} - {{ articles.title }}
+{% endblock %}
+
+{% block body %}
+  <section class="articles">
+    <div class="container">
+      <h2 class="articles-title">{{ articles.title }}</h2>
+      <div class="articles-details-list__top">
+        <img src="{{ articles.photo.url }}" alt="{{ articles.title }}" />
+        <div class="articles-details-list__text">{{ articles.text }}</div>
+      </div>
+      <div class="articles-list__date">{{ articles.data }}</div>
+    </div>
+  </section>
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/how.html' %}
+  {% include 'flat/components/all.html' %}
+{% endblock %}

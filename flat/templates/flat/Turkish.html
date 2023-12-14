@@ -1,0 +1,63 @@
+{% extends 'flat/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+  {% translate "Продажа недвижимости в Турции" context 'turkish_main' %}
+{% endblock %}
+
+{% block body %}
+  {% include 'flat/components/filter/filter_main.html' %}
+  <section class="newobj">
+    <div class="container">
+      <h2 class="newobj-title">{% translate "Недвижимость в Турции" context 'turkish_main' %}</h2>
+      <ul class="newobj-cards" id="allCardsFilterTR">
+        {% for card in flat %}
+          <li class="newobj-cards__card">
+            <a href="{{ card.get_absolute_url }}">
+              <div class="newobj-cards__card-top">
+                <img src="{{ card.main_photo.url }}" alt="" />
+                <span>{{ card.title }}</span>
+              </div>
+            </a>
+            <div class="newobj-cards__card-bottom">
+              <ul class="propety-card">
+                <li class="property-card__itm card-geo">
+                  <div class="card-link">
+                    <a href="#">{{ card.main_city }}</a>
+                    {% if card.main_district %}
+                      <a href="#" class="card-link__two">/ {{ card.main_district }}</a>
+                    {% endif %}
+                  </div>
+                </li>
+                {% if card.main_rooms %}
+                  <li class="property-card__itm card-rooms">
+                    <a href="#">{{ card.main_rooms }}</a>
+                  </li>
+                {% else %}
+                  <li class="property-card__itm card-rooms">
+                    <a href="#">{{ card.main_type_real_estate }}</a>
+                  </li>
+                {% endif %}
+                <li class="property-card__itm card-square">
+                  {% if card.square %}
+                    <a href="#">{{ card.square }} {% translate "m2" context 'turkish_main' %}</a>
+                  {% else %}
+                    <a href="#">{% translate "Подробности по телефону" context 'turkish_main' %}</a>
+                  {% endif %}
+                </li>
+                <li class="property-card__itm card-price">
+                  <span>{{ card.price }}</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/how.html' %}
+  {% include 'flat/components/all.html' %}
+{% endblock %}

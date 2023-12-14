@@ -1,0 +1,663 @@
+{% extends 'flat/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+  {{ flat.title }} в {{ flat.main_city }} - {{ flat.main_country }} {% translate "Продажа недвижимости" context 'details_main' %}
+{% endblock %}
+
+{% block body %}
+  <section class="details">
+    <div class="container">
+      <h1 class="details-title">
+        {{ flat.title }} - <span>{{ flat.main_country }}</span>
+        <span>{{ flat.main_city }}</span>
+        {% if flat.main_district %}
+          <span>{{ flat.main_district }}</span>
+        {% endif %}
+      </h1>
+      <ul class="list-four">
+        {% if flat.hot_offer %}
+          <li class="list-four__itm">{% translate "Горячее предложение" context 'details_main' %}</li>
+        {% endif %}
+
+        {% if flat.first_line %}
+          <li class="list-four__itm">{% translate "Первая линия" context 'details_main' %}</li>
+        {% endif %}
+
+        {% if flat.out_infra %}
+          <li class="list-four__itm">{% translate "Отдельная инфраструктура" context 'details_main' %}</li>
+        {% endif %}
+
+        {% if flat.vip %}
+          <li class="list-four__itm">{% translate "Для роскошной жизни" context 'details_main' %}</li>
+        {% endif %}
+      </ul>
+      <div class="details-block">
+        <div class="details-slider">
+          <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              {% if flat.main_photo %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.main_photo.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo1 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo1.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo2 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo2.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo3 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo3.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo4 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo4.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo5 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo5.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo6 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo6.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo7 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo7.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo8 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo8.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo9 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo9.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo10 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo10.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo11 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo11.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo12 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo12.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo13 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo13.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo14 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo14.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo15 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo15.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo16 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo16.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo17 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo17.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo18 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo18.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo19 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo19.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo20 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo20.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo21 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo21.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo22 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo22.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo23 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo23.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo24 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo24.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo25 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo25.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo26 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo26.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo27 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo27.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo28 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo28.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo29 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo29.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo30 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo30.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo31 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo31.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo32 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo32.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo33 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo33.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo34 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo34.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo35 %}
+                <div class="swiper-slide" lightbox-toggle>
+                  <img src=" {{ flat.photo35.url }} " />
+                </div>
+              {% endif %}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              {% if flat.main_photo %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.main_photo.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo1 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo1.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo2 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo2.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo3 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo3.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo4 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo4.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo5 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo5.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo6 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo6.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo7 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo7.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo8 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo8.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo9 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo9.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo10 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo10.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo11 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo11.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo12 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo12.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo13 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo13.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo14 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo14.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo15 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo15.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo16 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo16.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo17 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo17.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo18 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo18.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo19 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo19.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo20 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo20.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo21 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo21.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo22 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo22.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo23 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo23.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo24 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo24.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo25 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo25.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo26 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo26.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo27 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo27.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo28 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo28.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo29 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo29.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo30 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo30.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo31 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo31.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo32 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo32.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo33 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo33.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo34 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo34.url }} " />
+                </div>
+              {% endif %}
+              {% if flat.photo35 %}
+                <div class="swiper-slide">
+                  <img src=" {{ flat.photo35.url }} " />
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="details-list">
+          <div>
+            <ul class="list_one">
+              <li class="list-one__itm">
+                {% translate "Стоимость" context 'details_main' %} <span class="card-price details-price">{{ flat.price }}</span> <span>EURO</span>
+              </li>
+              <li class="list-one__itm">
+                {% translate "Комнаты:" context 'details_main' %} <span> {% if flat.main_rooms%} {{ flat.main_rooms }} {% endif %}</span>
+              </li>
+
+              {% if flat.square %}
+                <li class="list-one__itm">
+                  {% translate "Площадь объекта:" context 'details_main' %} <span>({{ flat.square }})m2</span>
+                </li>
+              {% endif %}
+
+              {% if flat.year_of_construction %}
+                <li class="list-one__itm">
+                  {% translate "Год постройки:" context 'details_main' %} <span>{{ flat.year_of_construction }}</span>
+                </li>
+              {% endif %}
+
+              {% if flat.furniture %}
+                <li class="list-one__itm">
+                  {% translate "Мебель:" context 'details_main' %} <span>{% translate "Есть" context 'details_main' %}</span>
+                </li>
+              {% endif %}
+            </ul>
+            <ul class="list-two">
+              <li class="list-two__itm">
+                {% translate "Страна:" context 'details_main' %} <span>{{ flat.main_country }}</span>
+                {% if flat.main_district %}
+                  <span>/ {{ flat.main_district }}</span>
+                {% endif %}
+              </li>
+              <li class="list-two__itm">
+                {% translate "Город:" context 'details_main' %} <span>{{ flat.main_city }}</span>
+              </li>
+              <li class="list-two__itm">
+                {% translate "Предложение:" context 'details_main' %} <span>{{ flat.main_offer }}</span>
+              </li>
+              <li class="list-two__itm">
+                {% translate "Тип недвижимости:" context 'details_main' %} <span>{{ flat.main_type_real_estate }}</span>
+              </li>
+            </ul>
+            <ul class="list-three">
+              {% if flat.to_sea %}
+                <li class="list-three__itm">
+                  {% translate "Расстояние до моря:" context 'details_main' %} <span>{{ flat.to_sea }} {% translate "км" context 'details_main' %}</span>
+                </li>
+              {% endif %}
+
+              {% if flat.to_center %}
+                <li class="list-three__itm">
+                  {% translate "Расстояние до центра:" context 'details_main' %} <span>{{ flat.to_center }} {% translate "км" context 'details_main' %}</span>
+                </li>
+              {% endif %}
+
+              {% if flat.to_airport %}
+                <li class="list-three__itm">
+                  {% translate "Расстояние до аэропорта:" context 'details_main' %} <span>{{ flat.to_airport }} {% translate "км" context 'details_main' %}</span>
+                </li>
+              {% endif %}
+            </ul>
+          </div>
+          <h4 class="details-title">{% translate "В" context 'details_main' %} {{ flat.title }} {% translate "так же есть:" context 'details_main' %}</h4>
+          <ul class="list-five">
+            {% if flat.wireless_Internet %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Беспроводной интернет" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.billiard %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Бильярд" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.electric_generator %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Электрический генератор" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.Green_Garden %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Зеленый сад" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.finnish_sauna %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Финская сауна" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.jacuzzi %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Джакузи" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.playground %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Детская площадка" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.video_surveillance %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Видеонаблюдение" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.table_tennis %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Настольный теннис" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.indoor_swimming_pool %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Закрытй бассейн" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.roman_Steam_Room %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Римская парная" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.satellite_TV %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Спутниковое ТВ" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.massage_rooms %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Массажные кабинеты" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.fitness_center %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Фитнес центр" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.turkish_hamam %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Турецкий хамам" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.play_room %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Игровая комната" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.children_pool %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Детский бассейн" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.outdoor_swimming_pool %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Открытый бассейн" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.gazebos_for_recreation %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Беседки для отдыха" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.covered_parking %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Крытая парковка" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+            {% if flat.outdoor_parking %}
+              <li class="list-five__itm">
+                <span><img src="{% static 'flat/img/arrow.svg' %}" alt="" />{% translate "Открытая парковка" context 'details_main' %}</span>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="details-description">
+          <h4 class="details-title">{% translate "Описание объекта" context 'details_main' %} {{ flat.title }}</h4>
+          <p class="details-description__text">{{ flat.description|linebreaksbr }}</p>
+        </div>
+        <h4 class="details-title">{% translate "Наши специалисты:" context 'details_main' %}</h4>
+        <ul class="person">
+          <li class="person-itm">
+            <img src=" {% static 'flat/img/person/vefa.png' %} " alt="" />
+            <h4>VEFA MURADOVNA</h4>
+            <p>
+              {% translate "Языки:" context 'details_main' %} <span>TR</span>
+            </p>
+            <div class="person-itm__list">
+              <a href="tel:+905550486679">{% translate "Телефон:" context 'details_main' %} + 905550486679</a>
+              <div>
+                <a href="tg://resolve?domain=@Vefa_Muradovna"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a> {% endcomment %}
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a> {% endcomment %}
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a> {% endcomment %}
+              </div>
+            </div>
+          </li>
+          <li class="person-itm">
+            <img src=" {% static 'flat/img/person/bayram.png' %} " alt="" />
+            <h4>BAYRAM YESHILMEN</h4>
+            <p>
+              {% translate "Языки:" context 'details_main' %} <span>AR</span>
+            </p>
+            <div class="person-itm__list">
+              <a href="tel:+905320653829">{% translate "Телефон:" context 'details_main' %} + 905320653829</a>
+              <div>
+                {% comment %} <a href=""><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a> {% endcomment %}
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a> {% endcomment %}
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a> {% endcomment %}
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a> {% endcomment %}
+              </div>
+            </div>
+          </li>
+          <li class="person-itm">
+            <img src=" {% static 'flat/img/person/reza.png' %} " alt="" />
+            <h4>RZA VEFAYI</h4>
+            <p>
+              {% translate "Языки:" context 'details_main' %} <span>EN IR</span>
+            </p>
+            <div class="person-itm__list">
+              <a href="tel:+905537283963">{% translate "Телефон:" context 'details_main' %} + 905537283963</a>
+              <a href="tel:+989126228254">{% translate "Телефон:" context 'details_main' %} + 989126228254</a>
+
+              <div>
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a> {% endcomment %}
+                <a href="https://wa.me/905537283963?text=bavar-invest.com" target="_blank"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a> {% endcomment %}
+                {% comment %} <a href="#"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a> {% endcomment %}
+              </div>
+            </div>
+          </li>
+          <li class="person-itm">
+            <img src=" {% static 'flat/img/person/zhala.png' %} " alt="" />
+            <h4>ZHALA ELCHINOVNA</h4>
+            <p>
+              {% translate "Языки:" context 'details_main' %} <span>RUS</span>
+            </p>
+            <div class="person-itm__list">
+              <a href="tel:+905354119767">{% translate "Телефон:" context 'details_main' %} + 905354119767</a>
+              <div>
+                <a href="#"><img src=" {% static 'flat/img/social_pics/telegram.svg' %} " alt="" /></a>
+                <a href="#"><img src=" {% static 'flat/img/social_pics/whatsapp.svg' %} " alt="" /></a>
+                <a href="#"><img src=" {% static 'flat/img/social_pics/facebook.svg' %} " alt="" /></a>
+                <a href="#"><img src=" {% static 'flat/img/social_pics/instagram.svg' %} " alt="" /></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/how.html' %}
+  {% include 'flat/components/all.html' %}
+{% endblock %}

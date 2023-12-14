@@ -1,0 +1,21 @@
+{% extends 'flat/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+  {% translate "Bavar-invest - Недвижимость в Турции" context 'index' %}
+{% endblock %}
+
+{% block body %}
+  {% include 'flat/components/hero.html' %}
+  {% include 'flat/components/filter/filter_main.html' %}
+  {% include 'flat/components/about.html' %}
+  {% include 'flat/components/how.html' %}
+  {% include 'flat/components/new_object.html' %}
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/all.html' %}
+  {% include 'flat/components/articles.html' %}
+  {% include 'flat/components/news.html' %}
+  {% include 'flat/components/us.html' %}
+{% endblock %}

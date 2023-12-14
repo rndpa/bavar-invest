@@ -1,0 +1,118 @@
+{% extends 'flat/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block metadescr %}
+  {% translate 'Продажа недвижимости в Турции - Наши контакты' context 'contact' %}
+{% endblock %}
+{% block metakey %}
+  {% translate 'Продажа недвижимости в Турции - Наши контакты' context 'contact' %}
+{% endblock %}
+
+{% translate '' context 'contact' %}
+
+{% block body %}
+  <div class="container">
+    <h1>{% translate 'Компания Bavar-invest' context 'contact' %}</h1>
+    <h3>{% translate 'Мы сделаем все возможное что бы покупка вашей недвижимости было максимально комфортной' context 'contact' %}</h3>
+    <p>
+      {% translate 'В наших офисах вы сможете по настоящему оценить оценить обширный список услуг и познакомиться с нашими специалистами мирового уровня' context 'contact' %}
+    </p>
+    <img class="contact-img" src="{% static 'flat/img/alanya.jpg' %}" alt="" />
+
+    <div class="flex contact-block">
+      <div class="contact-text">
+        <p>
+          {% translate 'Oba göl mahallesi.14 SK .PTT evleri sitesi a blok .No, Oba, D:6, 07460 Alanya/Antalya, Türkiye' context 'contact' %}
+        </p>
+        <p>
+          {% translate 'Режим работы: ПН-ПТ. с9:00 до 18:00. СБ. с 9:00 до 15:00' context 'contact' %}
+        </p>
+        <ul class="footer-contacts">
+          <li class="footer-contacts__itm">
+            <p>
+              TR: <a href="tel:+905550486679">+ 905550486679</a>
+            </p>
+          </li>
+          <li class="footer-contacts__itm">
+            <p>
+              AR: <a href="tel:+905320653829">+ 905320653829</a>
+            </p>
+          </li>
+          <li class="footer-contacts__itm">
+            <p>
+              RUS: <a href="tel:+905354119767">+ 905354119767</a>
+            </p>
+          </li>
+          <li class="footer-contacts__itm">
+            <p>
+              EN: <a href="tel:+905537283963">+ 905537283963</a>
+            </p>
+          </li>
+          <li class="footer-contacts__itm">
+            <p>
+              IR: <a href="tel:+989126228254">+ 989126228254</a>
+            </p>
+          </li>
+        </ul>
+        <ul class="contact-social">
+          <li class="contact-social__itm header-social__link">
+            <a href="https://wa.me/905550486679?text=bavar-invest.com" target="blank"><img src="{% static 'flat/img/social_pics/whatsapp.svg' %}" alt="" /></a>
+          </li>
+          <li class="contact-social__itm header-social__link">
+            <a href="tg://resolve?domain=@prodazha_nedvizhimostii"><img src="{% static 'flat/img/social_pics/telegram.svg' %}" alt="" /></a>
+          </li>
+          <li class="contact-social__itm header-social__link">
+            <a href="https://www.facebook.com/BavarInvest?mibextid=LQQJ4d" target="blank"><img src="{% static 'flat/img/social_pics/facebook.svg' %}" alt="" /></a>
+          </li>
+          <li class="contact-social__itm header-social__link">
+            <a href="https://www.instagram.com/bavarturkeyinvestment/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="blank"><img src="{% static 'flat/img/social_pics/instagram.svg' %}" alt="" /></a>
+          </li>
+          <li class="contact-social__itm header-social__link">
+            <a href="mailto:bavarinvest0707@gmail.com"><img class="mail" src="{% static 'flat/img/social_pics/mail.svg' %}" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-map">
+        <a href="https://maps.google.com/?q=Bavar%20invest%20real%20estate,%20Oba%20Mahallesi%2014%20Sokak%20Zafer%20Apt%20No:17%20D:B,%2007400%20Alanya/Antalya&ftid=0x14dc9912aa155741:0x32a9c54ae900aab0&hl=tr-TR&gl=tr&entry=gps&lucs=,47071704" target="_blank"><img src="{% static 'flat/img/bavar-invest-map.png' %}" alt="" /></a>
+      </div>
+    </div>
+    <div class="contact-form">
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="contact-form-block">
+              <div class="contact-form-block__left">
+                <h3>{% translate 'Отправьте нам свое сообщение' context 'about' %}</h3>
+                <div>
+                  <label for="">{% translate 'Ваше имя:*' context 'about' %}</label>
+                  {{ form.name }}
+                </div>
+                <div>
+                  <label for="" type='email'>{% translate 'Ваш email:*' context 'about' %}</label>
+                  {{ form.email }}
+                </div>
+                <div>
+                  <label for="" type='tel'>{% translate 'Ваш телефон:*' context 'about' %}</label>
+                  {{ form.phone }}
+                </div>
+              </div>
+              <div class="contact-form-block__right">
+                <div>
+                  <label for="">{% translate 'Ваше сообщение:' context 'contact' %}</label>
+                  {{ form.message }}
+                  <button type="submit" class="btn-success">{% translate 'Отправить вопрос' context 'about' %}</button>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-checkbox">
+              <input type="checkbox" name="" id="" required checked />
+              <label for=""><a class="modal-link" href="#">{% translate 'Я прочитал и соглашаюсь с правилами об обработке персональных данных' context 'about' %}</a></label>
+            </div>
+          </form>
+    </div>
+  </div>
+  {% include 'flat/components/offer.html' %}
+  {% include 'flat/components/reviews.html' %}
+  {% include 'flat/components/how.html' %}
+  {% include 'flat/components/all.html' %}
+{% endblock %}

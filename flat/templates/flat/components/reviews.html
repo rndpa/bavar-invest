@@ -1,0 +1,24 @@
+{% load i18n %}
+
+{% block reviews %}
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews-title">{% translate "Отзывы наших клиентов" context 'reviews' %}</h2>
+      <ul class="reviews-list">
+        {% for itm in reviews %}
+          <li class="reviews-list__itm">
+            <div class="reviews-top">
+              <img src="{{ itm.photo.url }}" alt="" class="reviews-img" />
+              <h4>{{ itm.name|truncatechars:30 }}</h4>
+            </div>
+            <p>{{ itm.text|truncatechars:200 }}</p>
+            <span>{{ itm.data }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="newobj-btn">
+        <a href=" {% url 'reviews' %} " class="newobj-btn__itm">{% translate "все отзывы" context 'reviews' %}</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}
